@@ -116,16 +116,15 @@
       opacity: 0; animation: fadeUp 1s ease 0.4s forwards;
     }
     .hero-logo img {
-      width: clamp(200px, 30vw, 320px);   /* antes: 110-180px */
-      height: clamp(200px, 30vw, 320px);
-      border-radius: 50%;
+      width: clamp(200px, 40vw, 480px);
+      height: clamp(200px, 40vw, 480px);
       object-fit: cover;
       box-shadow:
         0 0 0 1px rgba(139,107,191,0.35),
         0 0 40px rgba(139,107,191,0.22),
         0 0 80px rgba(139,107,191,0.08);
     }
-
+    
     .hero-title {
       font-family: var(--display-font);
       font-size: clamp(2.6rem, 7.5vw, 5.8rem);
@@ -277,9 +276,11 @@
     <div class="hero-logo">
       <img src="favicon.png" alt="Re:Zero" />
     </div>
-    <h1 class="hero-title">
-      <span class="re">Re:</span><span class="zero">Zero</span>
-    </h1>
+    <!--
+      <h1 class="hero-title">
+        <span class="re">Re:</span><span class="zero">Zero</span>
+      </h1>
+    -->
     <p class="hero-subtitle">Kara Hajimeru Isekai Seikatsu</p>
     <p class="hero-author">Tappei Nagatsuki</p>
     <div class="hero-divider"></div>
