@@ -153,12 +153,16 @@
 
     /* "↓ LEER" — color explícito y legible */
     .scroll-hint {
+      display: inline-block;            /* necesario para que transform funcione en <a> */
       font-family: var(--display-font);
       font-size: 0.65rem; letter-spacing: 0.35em;
       color: var(--text-dim);           /* #7a7298 — visible sobre el fondo */
       text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
       opacity: 0; animation: fadeIn 1s ease 1.6s forwards, bob 2.8s ease 2.8s infinite;
     }
+    .scroll-hint:hover { color: var(--violet-l); }
 
     @keyframes bob    { 0%,100%{transform:translateY(0)} 50%{transform:translateY(8px)} }
     @keyframes fadeUp { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
@@ -210,6 +214,23 @@
       text-decoration: none; color: inherit;
       transition: all 0.2s ease;
     }
+
+    @media (max-width: 540px) {
+      .chapter-card {
+        grid-template-columns: 4.2rem 1fr;
+        grid-template-rows: auto auto;
+      }
+      .cap-fecha {
+        grid-column: 2;
+        grid-row: 2;
+        margin-top: 0.1rem;
+      }
+      .cap-num {
+        grid-row: 1 / 3;
+        align-self: center;
+        text-align: right;
+      }
+    }
     .chapter-card:hover {
       border-left-color: var(--blood-l);
       background: var(--bg-hover);
@@ -257,6 +278,18 @@
     footer a { color: var(--text-soft); text-decoration: none; }
     footer a:hover { color: var(--violet-ll); }
 
+    .footer-logo {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: 0.5rem; margin-bottom: 1.6rem;
+      text-decoration: none; opacity: 0.75;
+      transition: opacity 0.2s;
+    }
+    .footer-logo img { width: 24px; height: 24px; object-fit: contain; }
+    .footer-logo span { font-family: Arial, sans-serif; font-weight: 900; font-size: 0.85rem; letter-spacing: 0; text-transform: none; }
+    .footer-logo .li    { color: #ffffff; }
+    .footer-logo .tools { color: #05bfee; }
+    .footer-logo:hover { opacity: 1; }
+
     ::-webkit-scrollbar { width: 5px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--violet-d); border-radius: 3px; }
@@ -280,11 +313,11 @@
     <p class="hero-subtitle">Kara Hajimeru Isekai Seikatsu</p>
     <p class="hero-author">Tappei Nagatsuki</p>
     <div class="hero-divider"></div>
-    <p class="scroll-hint">↓ &nbsp; Leer</p>
+    <a class="scroll-hint" href="#indice" aria-label="Ir al índice de capítulos">↓ &nbsp; Leer</a>
   </div>
 </header>
 
-<main class="content">
+<main class="content" id="indice">
   <p class="section-label">Índice de capítulos</p>
   <div id="arc-container">
     <p style="color:var(--text-muted);font-style:italic;">Cargando capítulos…</p>
@@ -292,9 +325,15 @@
 </main>
 
 <footer>
+  <a class="footer-logo" href="https://github.com/litools-lab" target="_blank" rel="noopener" aria-label="LiTools en GitHub">
+    <img src="https://litools-lab.github.io/assets/redlogo_trans.png" alt="LiTools logo" />
+    <span><span class="li">Li</span><span class="tools">Tools</span></span>
+  </a>
   <p>Traducción no oficial al español &nbsp;·&nbsp; Obra original © Tappei Nagatsuki</p>
   <p style="margin-top:0.6rem">
     <a href="https://ncode.syosetu.com/n2267be/" target="_blank" rel="noopener">Fuente original en Syosetu</a>
+    &nbsp;·&nbsp;
+    <a href="https://witchculttranslation.com/" target="_blank" rel="noopener">Referencia en inglés: Witch Cult Translations</a>
   </p>
 </footer>
 
