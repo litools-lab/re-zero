@@ -11,41 +11,31 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      /* Fondos — muy oscuros pero no negro puro, con tinte violeta */
       --bg:          #08080f;
-      --bg-surface:  #0f0d1a;
       --bg-card:     #13101f;
       --bg-hover:    #1a1630;
 
-      /* Texto — mucho más claro y con buen contraste */
-      --text:        #e8e4f4;      /* blanco cálido-violeta, WCAG AA sobre --bg-card */
-      --text-soft:   #b0a8cc;      /* secundario legible */
-      --text-dim:    #6a6288;      /* terciario, solo decorativo */
-      --text-muted:  #342f4d;      /* separadores, muy secundario */
+      --text:        #e8e4f4;
+      --text-soft:   #b0a8cc;
+      --text-dim:    #7a7298;
+      --text-muted:  #524d6e;   /* subido vs antes para que "LEER" y footer sean legibles */
 
-      /* Violeta — paleta Satella */
       --violet:      #8b6bbf;
       --violet-l:    #b08de8;
       --violet-ll:   #d4baff;
       --violet-d:    #4a3480;
-      --violet-glow: rgba(139,107,191,0.2);
 
-      /* Plata — lado Subaru */
       --silver:      #a8b0c0;
       --silver-l:    #dce2ee;
 
-      /* Rojo sangre — sólo acentos de hover/énfasis */
       --blood:       #7a1525;
       --blood-l:     #c44060;
-      --blood-glow:  rgba(196,64,96,0.25);
 
-      /* Tipografía — Lora para lectura, Cinzel para display */
       --body-font:    'Lora', Georgia, serif;
       --display-font: 'Cinzel', serif;
     }
 
     html { scroll-behavior: smooth; }
-
     body {
       background: var(--bg);
       color: var(--text);
@@ -67,18 +57,16 @@
       padding: 4rem 2rem;
       overflow: hidden;
     }
-
     .hero::before {
       content: '';
       position: absolute; inset: 0;
       background:
-        radial-gradient(ellipse 65% 50% at 50% 22%, rgba(74,52,128,0.45) 0%, transparent 68%),
-        radial-gradient(ellipse 40% 40% at 70% 82%, rgba(122,21,37,0.15) 0%, transparent 55%),
-        radial-gradient(ellipse 50% 60% at 15% 60%, rgba(20,15,45,0.5)  0%, transparent 60%);
+        radial-gradient(ellipse 65% 50% at 50% 22%, rgba(74,52,128,0.48) 0%, transparent 68%),
+        radial-gradient(ellipse 40% 35% at 72% 80%, rgba(122,21,37,0.18) 0%, transparent 55%),
+        radial-gradient(ellipse 45% 55% at 14% 62%, rgba(20,15,45,0.5)  0%, transparent 60%);
       z-index: 0;
     }
 
-    /* Motas de maná flotantes */
     .particles { position: absolute; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
     .mote {
       position: absolute; border-radius: 50%;
@@ -87,12 +75,10 @@
     }
     @keyframes float {
       0%   { opacity: 0;    transform: translateY(105%) scale(0.4); }
-      12%  { opacity: 0.12; }
+      12%  { opacity: 0.13; }
       88%  { opacity: 0.05; }
       100% { opacity: 0;    transform: translateY(-10%) scale(1.1); }
     }
-
-    /* Gotas de sangre ocasionales */
     .drop {
       position: absolute;
       border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
@@ -100,58 +86,54 @@
       animation: fall linear infinite;
     }
     @keyframes fall {
-      0%   { opacity: 0;    transform: translateY(-8px) scaleY(1);   }
-      6%   { opacity: 0.28; }
-      85%  { opacity: 0.1;  }
+      0%   { opacity: 0;    transform: translateY(-8px) scaleY(1);    }
+      6%   { opacity: 0.25; }
+      85%  { opacity: 0.08; }
       100% { opacity: 0;    transform: translateY(102vh) scaleY(1.8); }
     }
 
-    .hero-content { position: relative; z-index: 1; max-width: 680px; }
+    .hero-content { position: relative; z-index: 1; max-width: 720px; }
 
     .hero-tag {
       font-family: var(--display-font);
       font-size: 0.6rem; letter-spacing: 0.42em;
       color: var(--violet-l); text-transform: uppercase;
-      margin-bottom: 2.2rem;
+      margin-bottom: 2.5rem;
       opacity: 0; animation: fadeUp 0.9s ease 0.2s forwards;
     }
 
-    /* Logo circular */
+    /* ── Logo más grande ── */
     .hero-logo {
-      margin-bottom: 2rem;
+      margin-bottom: 2.4rem;
       opacity: 0; animation: fadeUp 1s ease 0.4s forwards;
     }
     .hero-logo img {
-      width: clamp(110px, 18vw, 180px);
-      height: clamp(110px, 18vw, 180px);
+      width: clamp(200px, 30vw, 320px);   /* antes: 110-180px */
+      height: clamp(200px, 30vw, 320px);
       border-radius: 50%;
       object-fit: cover;
       box-shadow:
-        0 0 0 1px rgba(139,107,191,0.3),
-        0 0 30px var(--violet-glow),
-        0 0 60px rgba(139,107,191,0.08);
+        0 0 0 1px rgba(139,107,191,0.35),
+        0 0 40px rgba(139,107,191,0.22),
+        0 0 80px rgba(139,107,191,0.08);
     }
 
     .hero-title {
       font-family: var(--display-font);
-      font-size: clamp(2.8rem, 8vw, 6rem);
-      font-weight: 600; line-height: 1; letter-spacing: 0.04em;
+      font-size: clamp(2.6rem, 7.5vw, 5.8rem);
+      font-weight: 600; line-height: 1; letter-spacing: 0.05em;
       margin-bottom: 0.3em;
       opacity: 0; animation: fadeUp 1s ease 0.6s forwards;
     }
     .hero-title .re   { color: var(--silver-l); }
-    .hero-title .zero {
-      color: var(--violet-ll);
-      text-shadow: 0 0 40px rgba(212,186,255,0.35);
-    }
+    .hero-title .zero { color: var(--violet-ll); text-shadow: 0 0 40px rgba(212,186,255,0.35); }
 
     .hero-subtitle {
-      font-family: var(--body-font);
-      font-style: italic; font-size: clamp(0.9rem, 2.2vw, 1.15rem);
+      font-family: var(--body-font); font-style: italic;
+      font-size: clamp(0.9rem, 2.2vw, 1.15rem);
       color: var(--text-soft); margin-bottom: 0.5rem;
       opacity: 0; animation: fadeUp 1s ease 0.8s forwards;
     }
-
     .hero-author {
       font-family: var(--display-font);
       font-size: 0.62rem; letter-spacing: 0.28em;
@@ -159,18 +141,19 @@
       margin-bottom: 3.5rem;
       opacity: 0; animation: fadeUp 1s ease 0.95s forwards;
     }
-
     .hero-divider {
       width: 80px; height: 1px;
       background: linear-gradient(90deg, transparent, var(--violet), transparent);
-      margin: 0 auto 3.5rem;
+      margin: 0 auto 3rem;
       opacity: 0; animation: fadeIn 1.2s ease 1.1s forwards;
     }
 
+    /* "↓ LEER" — color explícito y legible */
     .scroll-hint {
       font-family: var(--display-font);
-      font-size: 0.58rem; letter-spacing: 0.35em;
-      color: var(--text-muted); text-transform: uppercase;
+      font-size: 0.65rem; letter-spacing: 0.35em;
+      color: var(--text-dim);           /* #7a7298 — visible sobre el fondo */
+      text-transform: uppercase;
       opacity: 0; animation: fadeIn 1s ease 1.6s forwards, bob 2.8s ease 2.8s infinite;
     }
 
@@ -184,7 +167,6 @@
       margin: 0 auto;
       padding: 5rem 2rem 9rem;
     }
-
     .section-label {
       font-family: var(--display-font);
       font-size: 0.62rem; letter-spacing: 0.38em;
@@ -198,7 +180,6 @@
     }
 
     .arc-block { margin-bottom: 4rem; }
-
     .arc-header {
       display: flex; align-items: baseline; gap: 1.2rem;
       margin-bottom: 1rem; padding-bottom: 0.75rem;
@@ -215,7 +196,6 @@
     }
 
     .chapter-list { display: flex; flex-direction: column; gap: 2px; }
-
     .chapter-card {
       display: grid;
       grid-template-columns: 5.5rem 1fr auto;
@@ -238,7 +218,7 @@
     .cap-num {
       font-family: var(--display-font);
       font-size: 0.57rem; letter-spacing: 0.16em;
-      color: var(--text-dim); text-align: right;
+      color: var(--text-muted); text-align: right;
       transition: color 0.2s;
     }
     .cap-tipo-prologo .cap-num,
@@ -257,24 +237,23 @@
       font-size: 0.54rem; letter-spacing: 0.12em;
       color: var(--text-muted); white-space: nowrap;
     }
-
     .empty-cap {
       padding: 1rem 1.1rem; color: var(--text-muted);
       font-style: italic; font-size: 0.95rem;
     }
 
-    /* ── FOOTER ───────────────────────────────────────── */
+    /* ── FOOTER — color explícito y legible ── */
     footer {
       text-align: center; padding: 3rem 2rem;
-      border-top: 1px solid rgba(139,107,191,0.1);
+      border-top: 1px solid rgba(139,107,191,0.12);
       font-family: var(--display-font);
-      font-size: 0.56rem; letter-spacing: 0.18em;
-      color: var(--text-muted); text-transform: uppercase;
+      font-size: 0.6rem; letter-spacing: 0.18em;
+      color: var(--text-dim);           /* #7a7298 — legible */
+      text-transform: uppercase;
     }
-    footer a { color: var(--text-dim); text-decoration: none; }
-    footer a:hover { color: var(--violet-l); }
+    footer a { color: var(--text-soft); text-decoration: none; }
+    footer a:hover { color: var(--violet-ll); }
 
-    /* Scrollbar */
     ::-webkit-scrollbar { width: 5px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--violet-d); border-radius: 3px; }
@@ -315,32 +294,31 @@
 </footer>
 
 <script>
-  /* Partículas */
   const pc = document.getElementById('particles');
   for (let i = 0; i < 20; i++) {
     const m = document.createElement('div'); m.className = 'mote';
     const s = Math.random() * 3.5 + 1.5;
-    m.style.cssText = `left:${Math.random()*100}%;bottom:-5%;width:${s}px;height:${s}px;` +
-      `animation-duration:${Math.random()*14+10}s;animation-delay:${Math.random()*16}s;`;
+    m.style.cssText = `left:${Math.random()*100}%;bottom:-5%;width:${s}px;height:${s}px;`
+      + `animation-duration:${Math.random()*14+10}s;animation-delay:${Math.random()*16}s;`;
     pc.appendChild(m);
   }
   for (let i = 0; i < 5; i++) {
     const d = document.createElement('div'); d.className = 'drop';
     const s = Math.random() * 1.8 + 1;
-    d.style.cssText = `left:${Math.random()*100}%;top:-5%;width:${s}px;height:${s*3.5}px;` +
-      `animation-duration:${Math.random()*10+9}s;animation-delay:${Math.random()*18}s;`;
+    d.style.cssText = `left:${Math.random()*100}%;top:-5%;width:${s}px;height:${s*3.5}px;`
+      + `animation-duration:${Math.random()*10+9}s;animation-delay:${Math.random()*18}s;`;
     pc.appendChild(d);
   }
 
-  /* Capítulos */
   async function loadChapters() {
     let chapters;
     try {
       const r = await fetch('chapters.json');
+      if (!r.ok) throw new Error(r.status);
       chapters = await r.json();
     } catch(e) {
       document.getElementById('arc-container').innerHTML =
-        '<p style="color:var(--text-muted);font-style:italic;">No se pudo cargar el índice.</p>';
+        '<p style="color:var(--text-soft);font-style:italic;">No se pudo cargar el índice de capítulos.</p>';
       return;
     }
     const arcs = {};
@@ -370,7 +348,8 @@
                     : ch.tipo === 'epilogo' ? 'Epílogo'
                     : `Cap. ${ch.capitulo}`;
         const fecha = ch.fecha
-          ? new Date(ch.fecha).toLocaleDateString('es-ES', {day:'2-digit',month:'short',year:'numeric'})
+          ? new Date(ch.fecha + 'T12:00:00').toLocaleDateString('es-ES',
+              {day:'2-digit', month:'short', year:'numeric'})
           : '';
         const card = document.createElement('a');
         card.className = `chapter-card cap-tipo-${ch.tipo || 'normal'}`;
