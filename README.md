@@ -1,4 +1,4 @@
-# Re:Zero — Traducción al Español · GitHub Pages
+# <img src="assets/logo.png" width="48" height="48" align="absmiddle" alt=""> Re:Zero — Traducción al Español · GitHub Pages
 
 Sitio estático para publicar la traducción capítulo a capítulo.
 
