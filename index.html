@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Re:Zero — Traducción al Español</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:       #0d0c0e;
+      --paper:     #f5f0e8;
+      --paper-mid: #ede6d4;
+      --crimson:   #8b1a1a;
+      --crimson-d: #5c0f0f;
+      --gold:      #c9a84c;
+      --gold-l:    #e8d08a;
+      --mist:      #3a3540;
+      --mist-l:    #6b6278;
+      --serif:     'Cormorant Garamond', Georgia, serif;
+      --display:   'Cinzel', serif;
+      --fell:      'IM Fell English', serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--ink);
+      color: var(--paper);
+      font-family: var(--serif);
+      font-size: 18px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ─── HERO ─────────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 30%, #2a0a0a 0%, transparent 70%),
+        radial-gradient(ellipse 60% 80% at 80% 80%, #0a0a1a 0%, transparent 60%),
+        radial-gradient(ellipse 50% 50% at 10% 60%, #1a0a0a 0%, transparent 50%);
+      z-index: 0;
+    }
+
+    /* Animated blood-drop particles */
+    .particles {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .drop {
+      position: absolute;
+      width: 2px;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      background: var(--crimson);
+      opacity: 0;
+      animation: fall linear infinite;
+    }
+    @keyframes fall {
+      0%   { opacity: 0; transform: translateY(-20px) scaleY(1); }
+      10%  { opacity: 0.6; }
+      80%  { opacity: 0.3; }
+      100% { opacity: 0; transform: translateY(100vh) scaleY(2.5); }
+    }
+
+    .hero-content { position: relative; z-index: 1; max-width: 780px; }
+
+    .hero-tag {
+      font-family: var(--display);
+      font-size: 0.7rem;
+      letter-spacing: 0.35em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.3s forwards;
+    }
+
+    .hero-title {
+      font-family: var(--display);
+      font-size: clamp(2.4rem, 7vw, 5.5rem);
+      font-weight: 600;
+      line-height: 1.05;
+      letter-spacing: 0.05em;
+      color: var(--paper);
+      margin-bottom: 0.3em;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.5s forwards;
+    }
+    .hero-title span {
+      color: var(--crimson);
+      text-shadow: 0 0 40px rgba(139,26,26,0.6);
+    }
+
+    .hero-subtitle {
+      font-family: var(--fell);
+      font-style: italic;
+      font-size: clamp(1rem, 2.5vw, 1.4rem);
+      color: var(--mist-l);
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.7s forwards;
+    }
+
+    .hero-author {
+      font-family: var(--display);
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 3.5rem;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.9s forwards;
+    }
+
+    .hero-divider {
+      width: 120px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--crimson), transparent);
+      margin: 0 auto 3.5rem;
+      opacity: 0;
+      animation: fadeIn 1.2s ease 1.1s forwards;
+    }
+
+    .scroll-hint {
+      font-family: var(--display);
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      color: var(--mist-l);
+      text-transform: uppercase;
+      opacity: 0;
+      animation: fadeIn 1.2s ease 1.6s forwards, bob 2.5s ease 2.8s infinite;
+    }
+    @keyframes bob {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(6px); }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(22px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    /* ─── CONTENT AREA ──────────────────────────────────────── */
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 5rem 2rem 8rem;
+    }
+
+    .section-label {
+      font-family: var(--display);
+      font-size: 0.68rem;
+      letter-spacing: 0.35em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, var(--crimson-d), transparent);
+    }
+
+    /* Arc grouping */
+    .arc-block { margin-bottom: 4rem; }
+
+    .arc-header {
+      display: flex;
+      align-items: baseline;
+      gap: 1.2rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+    }
+    .arc-number {
+      font-family: var(--display);
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      color: var(--crimson);
+      text-transform: uppercase;
+    }
+    .arc-title {
+      font-family: var(--fell);
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--paper-mid);
+    }
+
+    /* Chapter cards */
+    .chapter-list { display: flex; flex-direction: column; gap: 0.4rem; }
+
+    .chapter-card {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 1.2rem;
+      padding: 1rem 1.2rem;
+      border: 1px solid rgba(255,255,255,0.04);
+      border-left: 2px solid transparent;
+      background: rgba(255,255,255,0.015);
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+    .chapter-card:hover {
+      border-left-color: var(--crimson);
+      background: rgba(139,26,26,0.07);
+      transform: translateX(4px);
+    }
+
+    .cap-num {
+      font-family: var(--display);
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      color: var(--mist-l);
+      min-width: 4rem;
+      text-align: right;
+    }
+    .cap-tipo-prologo .cap-num { color: var(--gold); }
+
+    .cap-titulo {
+      font-family: var(--fell);
+      font-size: 1.05rem;
+    }
+    .cap-tipo-prologo .cap-titulo { font-style: italic; }
+
+    .cap-fecha {
+      font-family: var(--display);
+      font-size: 0.6rem;
+      letter-spacing: 0.15em;
+      color: var(--mist-l);
+      white-space: nowrap;
+    }
+
+    /* Empty state */
+    .empty-cap {
+      padding: 1rem 1.2rem;
+      color: var(--mist);
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+
+    /* ─── FOOTER ────────────────────────────────────────────── */
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      font-family: var(--display);
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      color: var(--mist);
+      text-transform: uppercase;
+    }
+    footer a { color: var(--mist-l); text-decoration: none; }
+    footer a:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="particles" id="particles"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Novela Web &nbsp;·&nbsp; Traducción al Español</p>
+      <h1 class="hero-title">Re:<span>Zero</span></h1>
+      <p class="hero-subtitle">Kara Hajimeru Isekai Seikatsu</p>
+      <p class="hero-author">Tappei Nagatsuki</p>
+      <div class="hero-divider"></div>
+      <p class="scroll-hint">↓ &nbsp; Leer</p>
+    </div>
+  </header>
+
+  <!-- CHAPTER INDEX -->
+  <main class="content">
+    <p class="section-label">Índice de capítulos</p>
+    <div id="arc-container">
+      <p style="color:var(--mist-l); font-style:italic;">Cargando capítulos…</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Traducción no oficial al español &nbsp;·&nbsp; Obra original © Tappei Nagatsuki</p>
+    <p style="margin-top:0.5rem"><a href="https://syosetu.com/" target="_blank" rel="noopener">Fuente original en Syosetu</a></p>
+  </footer>
+
+  <script>
+    /* ── Particles ── */
+    const container = document.getElementById('particles');
+    for (let i = 0; i < 22; i++) {
+      const d = document.createElement('div');
+      d.className = 'drop';
+      const size = Math.random() * 3 + 1.5;
+      d.style.cssText = `
+        left: ${Math.random() * 100}%;
+        top: ${-Math.random() * 30}%;
+        width: ${size}px;
+        height: ${size * (Math.random() * 2 + 2)}px;
+        animation-duration: ${Math.random() * 8 + 6}s;
+        animation-delay: ${Math.random() * 10}s;
+        opacity: 0;
+      `;
+      container.appendChild(d);
+    }
+
+    /* ── Chapter loader ── */
+    async function loadChapters() {
+      let chapters;
+      try {
+        const res = await fetch('chapters.json');
+        chapters = await res.json();
+      } catch (e) {
+        document.getElementById('arc-container').innerHTML =
+          '<p style="color:var(--mist-l);font-style:italic;">No se pudo cargar el índice.</p>';
+        return;
+      }
+
+      // Group by arc
+      const arcs = {};
+      for (const ch of chapters) {
+        const key = ch.arco;
+        if (!arcs[key]) arcs[key] = { titulo: ch.arcoTitulo, caps: [] };
+        arcs[key].caps.push(ch);
+      }
+
+      const wrap = document.getElementById('arc-container');
+      wrap.innerHTML = '';
+
+      for (const [arcNum, arc] of Object.entries(arcs)) {
+        const block = document.createElement('div');
+        block.className = 'arc-block';
+
+        block.innerHTML = `
+          <div class="arc-header">
+            <span class="arc-number">Arco ${arcNum}</span>
+            <span class="arc-title">${arc.titulo}</span>
+          </div>
+          <div class="chapter-list" id="arc-${arcNum}-list"></div>
+        `;
+        wrap.appendChild(block);
+
+        const list = block.querySelector(`#arc-${arcNum}-list`);
+        if (arc.caps.length === 0) {
+          list.innerHTML = '<p class="empty-cap">Próximamente…</p>';
+        } else {
+          for (const ch of arc.caps) {
+            const label = ch.tipo === 'prologo' ? 'Prólogo'
+                        : ch.tipo === 'epilogo' ? 'Epílogo'
+                        : `Cap. ${ch.capitulo}`;
+            const fecha = ch.fecha
+              ? new Date(ch.fecha).toLocaleDateString('es-ES', { day:'2-digit', month:'short', year:'numeric' })
+              : '';
+
+            const card = document.createElement('a');
+            card.className = `chapter-card cap-tipo-${ch.tipo || 'normal'}`;
+            card.href = `lector.html?cap=${ch.archivo}`;
+            card.title = ch.resumen || '';
+            card.innerHTML = `
+              <span class="cap-num">${label}</span>
+              <span class="cap-titulo">${ch.titulo}</span>
+              <span class="cap-fecha">${fecha}</span>
+            `;
+            list.appendChild(card);
+          }
+        }
+      }
+    }
+
+    loadChapters();
+  </script>
+</body>
+</html>
