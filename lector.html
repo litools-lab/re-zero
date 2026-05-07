@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lector — Re:Zero ES</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet" />
+  <!-- marked.js: lightweight MD parser, no backend needed -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js" defer></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:         #080810;
+      --bg-mid:     #0e0d18;
+      --bg-bar:     #0b0a16;
+      --bg-card:    #100f1c;
+      --bg-hover:   #17152b;
+      --text:       #cdc8e2;
+      --text-dim:   #7870a0;
+      --text-muted: #3d3858;
+      --violet:     #7b5ea7;
+      --violet-l:   #a07fd4;
+      --violet-ll:  #c4a8f0;
+      --violet-d:   #3d2d6b;
+      --violet-glow: rgba(123,94,167,.2);
+      --silver:     #9ba3af;
+      --silver-l:   #d0d5db;
+      --blood:      #8b1a2a;
+      --blood-l:    #c0394d;
+      --serif:      'Cormorant Garamond', Georgia, serif;
+      --display:    'Cinzel', serif;
+      --fell:       'IM Fell English', serif;
+
+      /* Reader-specific */
+      --reader-size:   1.2rem;   /* controlled via JS */
+      --reader-lh:     1.95;
+      --reader-width:  680px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--serif);
+      font-size: var(--reader-size);
+      line-height: var(--reader-lh);
+      overflow-x: hidden;
+    }
+
+    /* ── TOP BAR ─────────────────────────────────────── */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-bar);
+      border-bottom: 1px solid rgba(123,94,167,.12);
+      display: flex;
+      align-items: center;
+      gap: 0;
+      padding: 0 1.5rem;
+      height: 52px;
+    }
+    .topbar-back {
+      font-family: var(--display);
+      font-size: .6rem;
+      letter-spacing: .22em;
+      color: var(--text-dim);
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: .5rem .8rem .5rem 0;
+      transition: color .2s;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    .topbar-back:hover { color: var(--violet-l); }
+    .topbar-back::before { content: '←'; font-size: .85rem; }
+
+    .topbar-divider {
+      width: 1px;
+      height: 22px;
+      background: rgba(123,94,167,.2);
+      margin: 0 1rem;
+    }
+
+    .topbar-title {
+      font-family: var(--fell);
+      font-style: italic;
+      font-size: .95rem;
+      color: var(--text-dim);
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    /* Font size controls */
+    .font-controls {
+      display: flex;
+      align-items: center;
+      gap: .3rem;
+      margin-left: 1rem;
+    }
+    .font-btn {
+      background: none;
+      border: 1px solid rgba(123,94,167,.2);
+      color: var(--text-dim);
+      font-family: var(--display);
+      font-size: .7rem;
+      letter-spacing: .05em;
+      padding: .25rem .55rem;
+      cursor: pointer;
+      transition: all .2s;
+      line-height: 1;
+    }
+    .font-btn:hover {
+      border-color: var(--violet);
+      color: var(--violet-l);
+      background: rgba(123,94,167,.07);
+    }
+    .font-label {
+      font-family: var(--display);
+      font-size: .58rem;
+      letter-spacing: .12em;
+      color: var(--text-muted);
+      padding: 0 .3rem;
+      min-width: 2.2rem;
+      text-align: center;
+    }
+
+    /* Progress bar */
+    .progress-bar {
+      position: fixed;
+      top: 52px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--violet-d), var(--blood-l));
+      z-index: 99;
+      transition: width .1s linear;
+    }
+
+    /* ── CHAPTER HEADER ──────────────────────────────── */
+    .chapter-header {
+      max-width: var(--reader-width);
+      margin: 0 auto;
+      padding: 5rem 2rem 2.5rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(123,94,167,.1);
+    }
+    .ch-arc {
+      font-family: var(--display);
+      font-size: .6rem;
+      letter-spacing: .3em;
+      color: var(--blood-l);
+      text-transform: uppercase;
+      margin-bottom: .8rem;
+    }
+    .ch-num {
+      font-family: var(--display);
+      font-size: .65rem;
+      letter-spacing: .25em;
+      color: var(--violet);
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+    .ch-title {
+      font-family: var(--fell);
+      font-style: italic;
+      font-size: clamp(1.5rem, 4vw, 2.4rem);
+      color: var(--silver-l);
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+    .ch-date {
+      font-family: var(--display);
+      font-size: .58rem;
+      letter-spacing: .15em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    /* ── MAIN TEXT BODY ──────────────────────────────── */
+    .reader-body {
+      max-width: var(--reader-width);
+      margin: 0 auto;
+      padding: 3.5rem 2rem 6rem;
+    }
+
+    /* Markdown-rendered content styles */
+    .reader-body p {
+      margin-bottom: 1.4em;
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    /* Re:Zero separator ※ lines */
+    .reader-body p:has(> strong:only-child),
+    .sep-line {
+      text-align: center;
+      color: var(--text-muted);
+      letter-spacing: .3em;
+      margin: 2.2em 0;
+    }
+
+    /* Headings (arc/chapter inside MD, usually h1–h3) */
+    .reader-body h1 {
+      font-family: var(--display);
+      font-size: 1.1em;
+      font-weight: 600;
+      letter-spacing: .08em;
+      color: var(--silver-l);
+      text-align: center;
+      margin: 2.5rem 0 .5rem;
+    }
+    .reader-body h2 {
+      font-family: var(--display);
+      font-size: .85em;
+      font-weight: 400;
+      letter-spacing: .12em;
+      color: var(--violet-l);
+      text-align: center;
+      margin: .5rem 0 .3rem;
+    }
+    .reader-body h3 {
+      font-family: var(--fell);
+      font-style: italic;
+      font-size: 1em;
+      color: var(--text-dim);
+      text-align: center;
+      font-weight: 400;
+      margin: .3rem 0 2.5rem;
+    }
+
+    /* Horizontal rule → decorative separator */
+    .reader-body hr {
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2.5rem 0;
+      color: var(--text-muted);
+      letter-spacing: .35em;
+      font-size: .9em;
+    }
+    .reader-body hr::after {
+      content: '※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※';
+      color: var(--text-muted);
+      letter-spacing: .3em;
+      font-size: .78em;
+    }
+
+    /* Em dashes and dialogue markers */
+    .reader-body em { font-style: italic; }
+    .reader-body strong { font-weight: 600; color: var(--silver-l); }
+
+    /* Drop cap for first paragraph after separator */
+    .reader-body .dropcap::first-letter {
+      float: left;
+      font-family: var(--display);
+      font-size: 3.6em;
+      line-height: .75;
+      padding-right: .1em;
+      padding-top: .08em;
+      color: var(--violet-ll);
+    }
+
+    /* ── NAV FOOTER ──────────────────────────────────── */
+    .chapter-nav {
+      max-width: var(--reader-width);
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 1rem;
+    }
+    .nav-btn {
+      font-family: var(--display);
+      font-size: .6rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--text-dim);
+      padding: .9rem 1.2rem;
+      border: 1px solid rgba(123,94,167,.12);
+      background: var(--bg-card);
+      transition: all .22s;
+      display: flex;
+      flex-direction: column;
+      gap: .35rem;
+    }
+    .nav-btn:hover {
+      border-color: var(--violet);
+      background: var(--bg-hover);
+      color: var(--violet-l);
+    }
+    .nav-btn.prev { text-align: left; }
+    .nav-btn.next { text-align: right; }
+    .nav-btn .nav-dir { color: var(--text-muted); font-size: .55rem; letter-spacing: .3em; }
+    .nav-btn .nav-title { font-family: var(--fell); font-style: italic; font-size: 1.3em; color: var(--silver); }
+    .nav-back-center {
+      text-align: center;
+      font-family: var(--display);
+      font-size: .58rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-back-center:hover { color: var(--violet-l); }
+
+    /* ── LOADING / ERROR STATES ──────────────────────── */
+    .state-center {
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.2rem;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .state-icon {
+      font-size: 2rem;
+      opacity: .3;
+    }
+    .state-msg {
+      font-family: var(--fell);
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--text-dim);
+    }
+    .state-sub {
+      font-family: var(--display);
+      font-size: .6rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .spinner {
+      width: 28px; height: 28px;
+      border: 2px solid rgba(123,94,167,.15);
+      border-top-color: var(--violet-l);
+      border-radius: 50%;
+      animation: spin .9s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--violet-d); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--violet); }
+  </style>
+</head>
+<body>
+
+<!-- Sticky top bar -->
+<nav class="topbar">
+  <a class="topbar-back" href="index.html">Índice</a>
+  <div class="topbar-divider"></div>
+  <span class="topbar-title" id="topbar-title">Cargando…</span>
+  <div class="font-controls">
+    <button class="font-btn" id="font-down" title="Reducir tamaño">A−</button>
+    <span class="font-label" id="font-label">100%</span>
+    <button class="font-btn" id="font-up"   title="Aumentar tamaño">A+</button>
+  </div>
+</nav>
+<div class="progress-bar" id="progress"></div>
+
+<!-- Dynamic content injected here -->
+<div id="app"></div>
+
+<script>
+(function(){
+
+  /* ── Font size control ── */
+  const SIZES = [80,90,100,110,120,135,150];
+  let sizeIdx = 2; // default: 100%
+  const BASE = 1.2; // rem at 100%
+
+  function applySize(){
+    const pct = SIZES[sizeIdx];
+    document.documentElement.style.setProperty('--reader-size', (BASE * pct/100)+'rem');
+    document.getElementById('font-label').textContent = pct+'%';
+    localStorage.setItem('rz-font-size', sizeIdx);
+  }
+  const saved = parseInt(localStorage.getItem('rz-font-size'));
+  if (!isNaN(saved) && saved >= 0 && saved < SIZES.length) sizeIdx = saved;
+  applySize();
+
+  document.getElementById('font-up').addEventListener('click', ()=>{ if(sizeIdx<SIZES.length-1){sizeIdx++;applySize();} });
+  document.getElementById('font-down').addEventListener('click', ()=>{ if(sizeIdx>0){sizeIdx--;applySize();} });
+
+  /* ── Progress bar ── */
+  window.addEventListener('scroll', ()=>{
+    const total = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = total > 0 ? (window.scrollY / total * 100) : 0;
+    document.getElementById('progress').style.width = pct+'%';
+  }, {passive:true});
+
+  /* ── URL param ── */
+  const params = new URLSearchParams(location.search);
+  const capFile = params.get('cap');
+
+  const app = document.getElementById('app');
+
+  function showLoading(){
+    app.innerHTML = `<div class="state-center"><div class="spinner"></div><p class="state-msg">Cargando capítulo…</p></div>`;
+  }
+  function showError(msg){
+    app.innerHTML = `<div class="state-center">
+      <div class="state-icon">✦</div>
+      <p class="state-msg">${msg}</p>
+      <p class="state-sub"><a href="index.html" style="color:var(--violet-l);text-decoration:none;">← Volver al índice</a></p>
+    </div>`;
+  }
+
+  if(!capFile){ showError('No se especificó ningún capítulo.'); document.getElementById('topbar-title').textContent='Error'; return; }
+
+  /* ── Load manifest + chapter ── */
+  showLoading();
+
+  Promise.all([
+    fetch('chapters.json').then(r=>r.json()),
+    fetch(capFile).then(r=>{ if(!r.ok) throw new Error('404'); return r.text(); })
+  ]).then(([chapters, mdText])=>{
+
+    /* Find current chapter in manifest */
+    const idx = chapters.findIndex(c => c.archivo === capFile || decodeURIComponent(capFile) === c.archivo);
+    const ch  = idx >= 0 ? chapters[idx] : null;
+    const prev = idx > 0 ? chapters[idx-1] : null;
+    const next = idx >= 0 && idx < chapters.length-1 ? chapters[idx+1] : null;
+
+    /* Update topbar */
+    const topTitle = ch
+      ? `${ch.tipo==='prologo'?'Prólogo':ch.tipo==='epilogo'?'Epílogo':'Cap. '+ch.capitulo} — ${ch.titulo}`
+      : capFile.split('/').pop().replace('.md','');
+    document.getElementById('topbar-title').textContent = topTitle;
+    document.title = topTitle + ' · Re:Zero ES';
+
+    /* Strip the first h1/h2/h3 block that duplicates metadata if manifest provides it */
+    let body = mdText;
+
+    /* Convert ※ lines that aren't already inside code */
+    /* marked will render them as <p>; we add a class via postprocess */
+
+    /* Parse markdown */
+    const html = marked.parse(body, { gfm: true, breaks: false });
+
+    /* Build header from manifest or first headings */
+    let headerHTML = '';
+    if(ch){
+      const labelText = ch.tipo==='prologo'?'Prólogo':ch.tipo==='epilogo'?'Epílogo':`Capítulo ${ch.capitulo}`;
+      const fechaText = ch.fecha
+        ? new Date(ch.fecha).toLocaleDateString('es-ES',{day:'2-digit',month:'long',year:'numeric'})
+        : '';
+      headerHTML = `
+        <header class="chapter-header">
+          <p class="ch-arc">Arco ${ch.arco} &nbsp;·&nbsp; ${ch.arcoTitulo}</p>
+          <p class="ch-num">${labelText}</p>
+          <h1 class="ch-title">«${ch.titulo}»</h1>
+          ${fechaText?`<p class="ch-date">${fechaText}</p>`:''}
+        </header>`;
+    }
+
+    /* Nav buttons */
+    function navBtn(c, dir){
+      if(!c) return `<span></span>`;
+      const label = c.tipo==='prologo'?'Prólogo':c.tipo==='epilogo'?'Epílogo':`Cap. ${c.capitulo}`;
+      const arrow = dir==='prev' ? '← ' : '';
+      const arrowR = dir==='next' ? ' →' : '';
+      return `<a class="nav-btn ${dir}" href="lector.html?cap=${encodeURIComponent(c.archivo)}">
+        <span class="nav-dir">${dir==='prev'?'←  Anterior':'Siguiente  →'}</span>
+        <span class="nav-title">${label}: ${c.titulo}</span>
+      </a>`;
+    }
+
+    app.innerHTML = `
+      ${headerHTML}
+      <article class="reader-body" id="reader-body">${html}</article>
+      <nav class="chapter-nav">
+        ${navBtn(prev,'prev')}
+        <a class="nav-back-center" href="index.html">↑ Índice</a>
+        ${navBtn(next,'next')}
+      </nav>
+    `;
+
+    /* Post-process: style ※ separator paragraphs */
+    document.querySelectorAll('#reader-body p').forEach(p => {
+      if(/^[※\s✦·\-—\*]+$/.test(p.textContent.trim())){
+        p.classList.add('sep-line');
+      }
+    });
+
+    /* Drop cap on first real paragraph */
+    const paras = document.querySelectorAll('#reader-body p:not(.sep-line)');
+    if(paras.length > 0) paras[0].classList.add('dropcap');
+
+    /* Keyboard navigation */
+    document.addEventListener('keydown', e=>{
+      if(e.key==='ArrowRight' && next) location.href=`lector.html?cap=${encodeURIComponent(next.archivo)}`;
+      if(e.key==='ArrowLeft'  && prev) location.href=`lector.html?cap=${encodeURIComponent(prev.archivo)}`;
+    });
+
+  }).catch(err=>{
+    console.error(err);
+    showError('No se pudo cargar el capítulo.<br>Comprueba que el archivo existe en la carpeta <code>contenido/</code>.');
+    document.getElementById('topbar-title').textContent = 'Error al cargar';
+  });
+
+})();
+</script>
+</body>
+</html>
