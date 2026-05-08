@@ -211,12 +211,7 @@
     }
     .reader-body em     { font-style: italic; }
     .reader-body strong { font-weight: 600; color: var(--silver-l); }
-    .reader-body p.dropcap::first-letter {
-      float: left; font-family: var(--display-font);
-      font-size: 3.4em; line-height: 0.78;
-      padding-right: 0.08em; padding-top: 0.06em;
-      color: var(--violet-ll);
-    }
+
 
     /* ── NAVEGACIÓN ───────────────────────────────────── */
     .ch-nav {
@@ -476,11 +471,7 @@
       if (/^[※\s✦·\-—]+$/.test(p.textContent.trim())) p.classList.add('sep');
     });
 
-    /* Drop cap — omitir párrafos que abran con guión largo de diálogo */
-    const EM_DASH = /^[―—\u2015\u2014]/;
-    const paras = [...document.querySelectorAll('#reader-body p:not(.sep)')];
-    const dropTarget = paras.find(p => !EM_DASH.test(p.textContent.trim()));
-    if (dropTarget) dropTarget.classList.add('dropcap');
+
 
     /* Teclado */
     document.addEventListener('keydown', e => {
