@@ -46,6 +46,29 @@
       --reader-size:  1.1rem;
     }
 
+    /* ── TEMA CLARO ─────────────────────────────────────── */
+    [data-theme="light"] {
+      --bg:          #f5f3ee;
+      --bg-card:     #edeae2;
+      --bg-hover:    #e4dfd4;
+      --bg-bar:      #ece9e2;
+
+      --text:        #1a1720;
+      --text-soft:   #3d3650;
+      --text-dim:    #6b6080;
+      --text-muted:  #9a90b0;
+
+      --violet:      #6a4daa;
+      --violet-l:    #7a5abf;
+      --violet-ll:   #5a3d99;
+      --violet-d:    #c8b8f0;
+
+      --silver:      #3a3550;
+      --silver-l:    #1a1530;
+
+      --blood-l:     #a02040;
+    }
+
     html { scroll-behavior: smooth; }
     body {
       background: var(--bg);
@@ -103,6 +126,17 @@
       letter-spacing: 0.1em; color: var(--text-muted);
       min-width: 2.4rem; text-align: center;
     }
+    .theme-btn {
+      background: none;
+      border: 1px solid rgba(139,107,191,0.2);
+      color: var(--text-dim);
+      font-size: 0.78rem;
+      width: 1.7rem; height: 1.7rem;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; margin-left: 0.5rem;
+      transition: all 0.18s; line-height: 1; flex-shrink: 0;
+    }
+    .theme-btn:hover { border-color: var(--violet); color: var(--violet-l); background: rgba(139,107,191,0.08); }
 
     .progress {
       position: fixed; top: 50px; left: 0; width: 0%; height: 2px;
@@ -265,6 +299,7 @@
     <span  class="font-label" id="font-label">100%</span>
     <button class="font-btn" id="font-up">A+</button>
   </div>
+  <button class="theme-btn" id="theme-toggle" title="Cambiar tema claro/oscuro">☀</button>
 </nav>
 <div class="progress" id="progress"></div>
 <div id="app"></div>
@@ -272,6 +307,22 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
 <script>
 (function () {
+
+  /* ── Tema oscuro / claro ── */
+  (function () {
+    const btn = document.getElementById('theme-toggle');
+    let theme = 'dark';
+    try { theme = localStorage.getItem('rz-theme') || 'dark'; } catch(e) {}
+    function applyTheme(t) {
+      theme = t;
+      document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : '');
+      btn.textContent = t === 'light' ? '🌙' : '☀';
+      btn.title = t === 'light' ? 'Cambiar a tema oscuro' : 'Cambiar a tema claro';
+      try { localStorage.setItem('rz-theme', t); } catch(e) {}
+    }
+    applyTheme(theme);
+    btn.addEventListener('click', () => applyTheme(theme === 'light' ? 'dark' : 'light'));
+  })();
 
   /* ── Tamaño de fuente ── */
   const SIZES = [85, 92, 100, 108, 118, 130, 144];
@@ -376,7 +427,10 @@
     }
 
     /* Parsear */
-    const html = marked.parse(md, { gfm: true, breaks: false });
+    /* Fix: Marked interpreta líneas que empiezan con —/― como <hr>.
+       Escapamos el primer carácter con una entidad HTML para evitarlo. */
+    const mdFixed = md.replace(/^(—|―)/gm, '&#x2015;');
+    const html = marked.parse(mdFixed, { gfm: true, breaks: false });
 
     /* Cabecera */
     let headerHTML = '';

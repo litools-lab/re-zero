@@ -312,11 +312,50 @@
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--violet-d); border-radius: 3px; }
     ::-webkit-scrollbar-thumb:hover { background: var(--violet); }
+
+    /* ── TEMA CLARO ─────────────────────────────────────── */
+    [data-theme="light"] {
+      --bg:          #f5f3ee;
+      --bg-card:     #edeae2;
+      --bg-hover:    #e4dfd4;
+
+      --text:        #1a1720;
+      --text-soft:   #3d3650;
+      --text-dim:    #6b6080;
+      --text-muted:  #9a90b0;
+
+      --violet:      #6a4daa;
+      --violet-l:    #7a5abf;
+      --violet-ll:   #5a3d99;
+      --violet-d:    #c8b8f0;
+
+      --silver:      #3a3550;
+      --silver-l:    #1a1530;
+
+      --blood:       #7a0a20;
+      --blood-l:     #a02040;
+    }
+
+    /* ── BOTÓN TEMA ─────────────────────────────────────── */
+    .theme-toggle-fixed {
+      position: fixed; bottom: 1.6rem; right: 1.6rem; z-index: 200;
+      background: var(--bg-card);
+      border: 1px solid rgba(139,107,191,0.25);
+      color: var(--text-dim);
+      font-size: 1rem;
+      width: 2.4rem; height: 2.4rem;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; border-radius: 50%;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+      transition: all 0.2s;
+    }
+    .theme-toggle-fixed:hover { border-color: var(--violet); color: var(--violet-l); background: var(--bg-hover); }
   </style>
 </head>
 <body>
 
 <header class="hero">
+  <button class="theme-toggle-fixed" id="theme-toggle" title="Cambiar tema">☀</button>
   <div class="particles" id="particles"></div>
   <div class="hero-content">
     <p class="hero-tag">Novela Web &nbsp;·&nbsp; Traducción no oficial al español</p>
@@ -356,6 +395,22 @@
 </footer>
 
 <script>
+  /* ── Tema oscuro / claro ── */
+  (function () {
+    const btn = document.getElementById('theme-toggle');
+    let theme = 'dark';
+    try { theme = localStorage.getItem('rz-theme') || 'dark'; } catch(e) {}
+    function applyTheme(t) {
+      theme = t;
+      document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : '');
+      btn.textContent = t === 'light' ? '🌙' : '☀';
+      btn.title = t === 'light' ? 'Cambiar a tema oscuro' : 'Cambiar a tema claro';
+      try { localStorage.setItem('rz-theme', t); } catch(e) {}
+    }
+    applyTheme(theme);
+    btn.addEventListener('click', () => applyTheme(theme === 'light' ? 'dark' : 'light'));
+  })();
+
   const pc = document.getElementById('particles');
   for (let i = 0; i < 20; i++) {
     const m = document.createElement('div'); m.className = 'mote';

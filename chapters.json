@@ -1,12 +1,12 @@
 [
   {
-    "id": "arc01_cap00",
+    "id": "arc01_cap000",
     "arco": 1,
     "arcoTitulo": "Un primer día tumultuoso",
     "capitulo": 0,
     "tipo": "prologo",
     "titulo": "El calor residual del comienzo",
-    "archivo": "contenido/arc01_cap00_prologo.md",
+    "archivo": "contenido/arc01_cap000_prologo.md",
     "fecha": "2026-05-07",
     "resumen": "Prólogo. El momento final antes de que todo comience."
   }

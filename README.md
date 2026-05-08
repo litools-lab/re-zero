@@ -12,8 +12,8 @@ rezero-site/
 ├── favicon.png         ← Icono del sitio
 ├── _config.yml         ← Configuración mínima de GitHub Pages
 └── contenido/
-    └── arc01_cap00_prologo.md
-    └── arc01_cap01.md   ← (futuros capítulos aquí)
+    └── arc01_cap000_prologo.md
+    └── arc01_cap001.md   ← (futuros capítulos aquí)
     └── ...
 ```
 
@@ -26,13 +26,13 @@ rezero-site/
 Guarda el capítulo traducido en `contenido/` con este convenio de nombre:
 
 ```
-arc{arco:02d}_cap{capitulo:02d}_{tipo}.md
+arc{arco:02d}_cap{capitulo:03d}_{tipo}.md
 ```
 
 Ejemplos:
-- `arc01_cap01.md`
-- `arc01_cap02.md`
-- `arc02_cap00_prologo.md`
+- `arc01_cap001.md`
+- `arc01_cap002.md`
+- `arc02_cap000_prologo.md`
 
 El archivo puede empezar directamente con el texto (sin repetir metadatos: el lector los toma del manifiesto).
 
@@ -40,13 +40,13 @@ El archivo puede empezar directamente con el texto (sin repetir metadatos: el le
 
 ```json
 {
-  "id": "arc01_cap01",
+  "id": "arc01_cap001",
   "arco": 1,
   "arcoTitulo": "Un primer día tumultuoso",
   "capitulo": 1,
   "tipo": "normal",
   "titulo": "El título del capítulo",
-  "archivo": "contenido/arc01_cap01.md",
+  "archivo": "contenido/arc01_cap001.md",
   "fecha": "2026-05-10",
   "resumen": "Breve descripción opcional (aparece en el tooltip)."
 }
@@ -62,7 +62,7 @@ El orden en el JSON es el orden de navegación (anterior/siguiente).
 ### 3. Sube los cambios
 
 ```bash
-git add contenido/arc01_cap01.md chapters.json
+git add contenido/arc01_cap001.md chapters.json
 git commit -m "Add: Arco 1 Cap. 1 — Título"
 git push
 ```
@@ -74,6 +74,7 @@ GitHub Pages publica automáticamente en 1–2 minutos.
 ## Funcionalidades del lector
 
 - **Control de tamaño de fuente** (A− / A+), persistente entre visitas
+- **Tema oscuro / claro** (botón ☀/🌙), persistente entre visitas
 - **Barra de progreso** de lectura
 - **Navegación por teclado**: ← → para capítulo anterior/siguiente
 - **Separadores ※** detectados y renderizados automáticamente
