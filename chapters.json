@@ -8,6 +8,61 @@
     "titulo": "El calor residual del comienzo",
     "archivo": "contenido/arc01_cap000_prologo.md",
     "fecha": "2026-05-07",
-    "resumen": "Prólogo. El momento final antes de que todo comience."
+    "resumen": "Prólogo. Subaru agoniza en el suelo, consumido por un calor que lo devora por dentro, en el momento final antes de que todo comience."
+  },
+  {
+    "id": "arc01_cap001",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 1,
+    "tipo": "capitulo",
+    "titulo": "Un inservible 10 estriado",
+    "archivo": "contenido/arc01_cap001_un_inservible_10_estriado.md",
+    "fecha": "2026-05-07",
+    "resumen": "Natsuki Subaru aparece de repente en un mercado de otro mundo. Sin dinero útil y sin entender nada, comienza a explorar este lugar extraño."
+  },
+  {
+    "id": "arc01_cap002",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 2,
+    "tipo": "capitulo",
+    "titulo": "No te pases de listo, dijo Dios",
+    "archivo": "contenido/arc01_cap002_no_te_pases_de_listo.md",
+    "fecha": "2026-05-07",
+    "resumen": "Subaru se enfrenta a unos bandidos en un callejón. Lo que empieza como bravata termina con su primera lección brutal sobre este mundo."
+  },
+  {
+    "id": "arc01_cap003",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 3,
+    "tipo": "capitulo",
+    "titulo": "Primer encuentro con la magia",
+    "archivo": "contenido/arc01_cap003_primer_encuentro_con_la_magia.md",
+    "fecha": "2026-05-07",
+    "resumen": "En el callejón aparece una chica de cabello plateado y mirada inteligente. Subaru la conoce por primera vez: Emilia."
+  },
+  {
+    "id": "arc01_cap004",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 4,
+    "tipo": "capitulo",
+    "titulo": "El precio de un regazo como almohada",
+    "archivo": "contenido/arc01_cap004_el_precio_de_un_regazo.md",
+    "fecha": "2026-05-07",
+    "resumen": "Subaru despierta con la cabeza apoyada en el regazo de Emilia. Entre bromas y curiosidad mutua, los dos empiezan a conocerse."
+  },
+  {
+    "id": "arc01_cap005",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 5,
+    "tipo": "capitulo",
+    "titulo": "Tu nombre",
+    "archivo": "contenido/arc01_cap005_tu_nombre.md",
+    "fecha": "2026-05-07",
+    "resumen": "El primer contacto amistoso de Subaru en este mundo. Emilia le revela su nombre y juntos emprenden la búsqueda del medallón robado."
   }
 ]

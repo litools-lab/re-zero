@@ -476,9 +476,11 @@
       if (/^[※\s✦·\-—]+$/.test(p.textContent.trim())) p.classList.add('sep');
     });
 
-    /* Drop cap */
-    const paras = document.querySelectorAll('#reader-body p:not(.sep)');
-    if (paras.length > 0) paras[0].classList.add('dropcap');
+    /* Drop cap — omitir párrafos que abran con guión largo de diálogo */
+    const EM_DASH = /^[―—\u2015\u2014]/;
+    const paras = [...document.querySelectorAll('#reader-body p:not(.sep)')];
+    const dropTarget = paras.find(p => !EM_DASH.test(p.textContent.trim()));
+    if (dropTarget) dropTarget.classList.add('dropcap');
 
     /* Teclado */
     document.addEventListener('keydown', e => {

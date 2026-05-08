@@ -26,7 +26,7 @@
       --text:        #e8e4f4;
       --text-soft:   #b0a8cc;
       --text-dim:    #7a7298;
-      --text-muted:  #524d6e;   /* subido vs antes para que "LEER" y footer sean legibles */
+      --text-muted:  #524d6e;
 
       --violet:      #8b6bbf;
       --violet-l:    #b08de8;
@@ -41,6 +41,15 @@
 
       --body-font:    'Lora', Georgia, serif;
       --display-font: 'Cinzel', serif;
+
+      /* Footer — permanece oscuro en ambos temas */
+      --footer-bg:        #06060c;
+      --footer-border:    rgba(139,107,191,0.18);
+      --footer-text:      #7a7298;
+      --footer-link:      #b0a8cc;
+      --footer-link-hover:#d4baff;
+      --footer-logo-li:   #ffffff;
+      --footer-logo-tools:#05bfee;
     }
 
     html { scroll-behavior: smooth; }
@@ -73,7 +82,10 @@
         radial-gradient(ellipse 40% 35% at 72% 80%, rgba(122,21,37,0.18) 0%, transparent 55%),
         radial-gradient(ellipse 45% 55% at 14% 62%, rgba(20,15,45,0.5)  0%, transparent 60%);
       z-index: 0;
+      transition: opacity 0.4s;
     }
+    /* En tema claro, los gradients del hero se atenúan mucho */
+    [data-theme="light"] .hero::before { opacity: 0.18; }
 
     .particles { position: absolute; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
     .mote {
@@ -266,17 +278,18 @@
       font-style: italic; font-size: 0.95rem;
     }
 
-    /* ── FOOTER — color explícito y legible ── */
+    /* ── FOOTER ──────────────────────────────────────────── */
     footer {
       text-align: center; padding: 3rem 2rem;
-      border-top: 1px solid rgba(139,107,191,0.12);
+      background: var(--footer-bg);
+      border-top: 1px solid var(--footer-border);
       font-family: var(--display-font);
       font-size: 0.6rem; letter-spacing: 0.18em;
-      color: var(--text-dim);           /* #7a7298 — legible */
+      color: var(--footer-text);
       text-transform: uppercase;
     }
-    footer a { color: var(--text-soft); text-decoration: none; }
-    footer a:hover { color: var(--violet-ll); }
+    footer a { color: var(--footer-link); text-decoration: none; }
+    footer a:hover { color: var(--footer-link-hover); }
 
     .footer-logo {
       display: inline-flex;
@@ -304,8 +317,8 @@
       line-height: 1;
     }
 
-    .footer-logo .li    { color: #ffffff; }
-    .footer-logo .tools { color: #05bfee; }
+    .footer-logo .li    { color: var(--footer-logo-li); }
+    .footer-logo .tools { color: var(--footer-logo-tools); }
     .footer-logo:hover { opacity: 1; }
 
     ::-webkit-scrollbar { width: 5px; }
@@ -334,6 +347,11 @@
 
       --blood:       #7a0a20;
       --blood-l:     #a02040;
+    }
+
+    /* Transición suave entre el body claro y el footer oscuro */
+    [data-theme="light"] footer {
+      box-shadow: inset 0 4px 32px rgba(0,0,0,0.18);
     }
 
     /* ── BOTÓN TEMA ─────────────────────────────────────── */
