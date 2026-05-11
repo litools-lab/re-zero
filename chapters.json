@@ -64,5 +64,71 @@
     "archivo": "contenido/arc01_cap005_tu_nombre.md",
     "fecha": "2026-05-08",
     "resumen": "El primer contacto amistoso de Subaru en este mundo. Emilia le revela su nombre y juntos emprenden la búsqueda del medallón robado."
+  },
+  {
+    "id": "arc01_cap006",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 6,
+    "tipo": "capitulo",
+    "titulo": "El fin del comienzo",
+    "archivo": "contenido/arc01_cap006_el_fin_del_comienzo.md",
+    "fecha": "2026-05-10",
+    "resumen": "Subaru y Satella llegan a la casa del botín en busca de la insignia robada. Lo que encuentran dentro marca el final brutal del primer día: la primera muerte de Subaru."
+  },
+  {
+    "id": "arc01_cap007",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 7,
+    "tipo": "capitulo",
+    "titulo": "Un reencuentro incomprensible",
+    "archivo": "contenido/arc01_cap007_un_reencuentro_incomprensible.md",
+    "fecha": "2026-05-10",
+    "resumen": "Subaru despierta de vuelta en el mercado, sin heridas y sin entender nada. Mientras asimila que algo lo ha devuelto al punto de partida, se topa con los mismos tres matones y esta vez no duda en plantarles cara."
+  },
+  {
+    "id": "arc01_cap008",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 8,
+    "tipo": "capitulo",
+    "titulo": "El sabor del alcohol amargo",
+    "archivo": "contenido/arc01_cap008_el_sabor_del_alcohol_amargo.md",
+    "fecha": "2026-05-10",
+    "resumen": "Subaru encuentra la casa del botín y conoce al Viejo Rom. Entre snacks, alcohol y una honestidad que sorprende al anciano, Subaru se aferra a la esperanza de que Satella es real."
+  },
+  {
+    "id": "arc01_cap009",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 9,
+    "tipo": "capitulo",
+    "titulo": "El as en la manga",
+    "archivo": "contenido/arc01_cap009_el_as_en_la_manga.md",
+    "fecha": "2026-05-10",
+    "resumen": "Llega Felt con la insignia y las negociaciones se complican cuando aparece una misteriosa clienta de negro. Subaru juega su única carta: el teléfono móvil."
+  },
+  {
+    "id": "arc01_cap010",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 10,
+    "tipo": "capitulo",
+    "titulo": "El precio de la lengua larga",
+    "archivo": "contenido/arc01_cap010_el_precio_de_la_lengua_larga.md",
+    "fecha": "2026-05-11",
+    "resumen": "Subaru gana la negociación pero su bocaza lo delata: Elsa revela su verdadera naturaleza y la casa del botín se convierte en un matadero. Rom cae intentando protegerlos."
+  },
+  {
+    "id": "arc01_cap011",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 11,
+    "tipo": "capitulo",
+    "titulo": "Una lucha demasiado tardía",
+    "archivo": "contenido/arc01_cap011_una_lucha_demasiado_tardia.md",
+    "fecha": "2026-05-11",
+    "resumen": "Felt cae intentando hacer lo que Subaru no pudo. Subaru lucha a sabiendas de que no tiene ninguna oportunidad, y Elsa lo destroza metódicamente antes de darle una muerte lenta y agonizante."
   }
 ]
