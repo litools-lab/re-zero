@@ -10,11 +10,11 @@ Los hombres le miraban con desprecio y desdén mientras Subaru los evaluaba. Apa
 
 「Maldita sea, un evento obligatorio.」
 
-Plantado ante los hombres que sonreían, Subaru se dio una bofetada y se puso en pie de un salto. Estaba claro que eran bandidos, y dado el estado del mundo, incluso podrían quitarle la vida. La Misión 1 había comenzado: 「Repeler a los bandidos」. La condición de victoria era eliminarlos, y la de derrota probablemente su propia muerte.
+Plantado ante los hombres que sonreían, Subaru se dio una bofetada y se puso en pie de un salto. Estaba claro que eran bandidos, y dado el estado del mundo, incluso podrían quitarle la vida. La Misión 1 había comenzado: 『Repeler a los bandidos』. La condición de victoria era eliminarlos, y la de derrota probablemente su propia muerte.
 
 Subaru se golpeó las mejillas e ignoró el escalofrío que le recorrió la espalda. Tenía que ponerse serio; la duda podría costarle la vida. Al menos tenía confianza en su capacidad de decisión.
 
-「Además, esto es otro mundo. Siguiendo el patrón habitual, puede que aquí sea increíblemente poderoso. Algo como que la gravedad sea una décima parte de lo normal o... Pensándolo bien, ¡mi cuerpo se siente ligero! ¡Quizás puedo ganar!」
+「Además, esto es otro mundo. Siguiendo el patrón habitual, puede que aquí sea increíblemente poderoso. Algo como que la gravedad sea una décima parte de lo normal o…… Pensándolo bien, ¡mi cuerpo se siente ligero! ¡Quizás puedo ganar!」
 
 「Está murmurando algo.」
 
@@ -26,11 +26,11 @@ A diferencia de Subaru, los hombres permanecían bastante tranquilos. Aun así, 
 
 「No tengo ni idea de lo que dices, pero vas a morir por burlarte de nosotros.」
 
-「¡Eso... es cosa mía!」
+「¡Eso…… es cosa mía!」
 
 Con esa declaración, Subaru lanzó su ataque preventivo antes de que pudieran reaccionar. Se abalanzó sobre uno de ellos con un derechazo con todo el cuerpo. Conectó de lleno en la cara del cabecilla con tal fuerza que el diente de este le cortó la mano.
 
-¡Había golpeado a alguien por primera vez! ¡Y dolía mucho más de lo esperado!
+――¡Había golpeado a alguien por primera vez! ¡Y dolía mucho más de lo esperado!
 
 Esto era todo lo que había ensayado en sus simulaciones, pero era la primera vez que lo hacía de verdad. El hombre al que golpeó cayó al suelo y dejó de moverse. Llevado por la emoción, Subaru se abalanzó de inmediato sobre otro que aún estaba paralizado por la sorpresa.
 
@@ -40,11 +40,11 @@ Esto era todo lo que había ensayado en sus simulaciones, pero era la primera ve
 
 Su pie trazó un arco directo a la sien del hombre y lo estampó contra la pared. Habiendo tumbado a un segundo, Subaru empezó a creerse invencible ante su inesperadamente competente actuación.
 
-「¡Parece que este mundo también está configurado para potenciarme! ¡Con toda esta adrenalina puedo ganar sin duda!」
+「¡Parece que este mundo también está configurado para potenciarme! ¡Con toda esta adrenalina puedo ganar sin duda――!」
 
 Lleno de valor, Subaru se giró hacia el último hombre dispuesto a acabar con él. Sin embargo, el destello del cuchillo en su mano hizo que Subaru se postrara en el acto.
 
-「Lo siento, ¡todo fue culpa mía! ¡Por favor, perdóneme, le suplico que me...!」
+「Lo siento, ¡todo fue culpa mía! ¡Por favor, perdóneme, le suplico que me――!」
 
 Se rindió de rodillas, la representación más grandiosa y más miserable del espíritu japonés.
 
@@ -60,7 +60,7 @@ Entonces se dio cuenta de que los dos que supuestamente habían caído también 
 
 Le aplastaron la cabeza contra el suelo, abriéndole la frente al raspársela contra la calzada. Subaru se hizo un ovillo desesperadamente mientras los golpes no dejaban de llover sobre él.
 
-「――Esto está muy mal, duele una barbaridad. Puede que de verdad me maten.」
+――Esto está muy mal, duele una barbaridad. Puede que de verdad me maten.
 
 No mostraban ninguna misericordia, y a diferencia de su mundo, no había garantías de que le perdonaran la vida. Había una posibilidad real de que lo torturaran hasta la muerte.
 
@@ -78,7 +78,7 @@ En el momento en que intentó levantarse, le aplastaron las manos bajo sus talon
 
 「Tus ropas y zapatos raros nos servirán, te vamos a convertir en pienso para las Ratas Gigantes.」
 
-「――Ah, en este mundo también hay ratas. Parece un monstruo de categoría baja.」
+Ah, en este mundo también hay ratas. Parece un monstruo de categoría baja.
 
 Su mente empezó a divagar en un intento de escapar de la realidad mientras miraba el cuchillo que podría desgarrarle en cualquier momento. No estaba viendo ninguna luz, ni el mundo se ralentizaba. Su vida simplemente terminaría así.
 
@@ -112,9 +112,9 @@ Con la chica fuera de escena, el callejón quedó en silencio. Había pasado com
 
 El hombre del cuchillo hablaba en serio. Subaru se dio cuenta de que esta vez sí estaba acabado; sus manos seguían atrapadas bajo sus talones y ya era demasiado tarde para intentar levantarse. La desesperación conquistó su corazón.
 
-「――¿Se... acaba así? ¿En un lugar como este? Es verdad que no he llevado una vida muy virtuosa. Aun así, una muerte así es demasiado cruel. Si me preguntaran qué hice, la respuesta sería que no hice nada en absoluto. Una muerte completamente vacía.」
+¿Se acaba así? ¿En un lugar como este? Es verdad que no he llevado una vida muy virtuosa. Aun así, una muerte así es demasiado cruel. Si me preguntaran qué hice, la respuesta sería que no hice nada en absoluto. Una muerte completamente vacía.
 
-El dolor... No era eso. Había algo más que le hacía llorar. No era tanto el miedo al final. Simplemente no podía soportar haber vivido una vida tan vacía y sin sentido.
+El dolor…… No era eso. Había algo más que le hacía llorar. No era tanto el miedo al final. Simplemente no podía soportar haber vivido una vida tan vacía y sin sentido.
 
 「――Basta ya, maleantes.」
 

@@ -6,7 +6,7 @@
 
 ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※
 
-「――Esto está muy mal, en serio.」
+――Esto está muy mal, en serio.
 
 Notó el suelo duro contra su mejilla y comprendió que había caído de bruces.
 
@@ -14,19 +14,19 @@ Sus fuerzas se habían esfumado por completo, y ya no sentía los dedos de las m
 
 El calor que le abrasaba por dentro era tan insoportable que tenía ganas de arrancarse la garganta.
 
-「――Quema, quema, quema, quema, quema, quema, quema.」
+――Quema, quema, quema, quema, quema, quema, quema.
 
 En el momento en que abrió la boca para gritar, lo que brotó no fue ningún alarido, sino un coágulo de sangre.
 
 Vomitó grandes cantidades de su propia sangre entre toses. Una espuma carmesí empezó a burbujear en las comisuras de su boca mientras boqueaba. En su campo de visión, ya entumecido, el suelo se había teñido de rojo.
 
-「――Ah… ¿toda esta sangre es mía?」
+――Ah… ¿toda esta sangre es mía?
 
 Era suficiente para empapar el cuerpo caído. La sangre supone aproximadamente el ocho por ciento del cuerpo humano, y se dice que perder alrededor de un tercio de ella resulta mortal, pero― parecía que él ya había perdido casi toda la suya.
 
 Había dejado de vomitar sangre, pero el 『calor』 que amenazaba con incinerarle persistía. Con enorme dificultad, llevó la mano hacia el abdomen, y al notar allí una sensación imposible, lo entendió.
 
-「――Ah. Me han abierto el estómago.」
+――Ah. Me han abierto el estómago.
 
 No era de extrañar que sintiera tanto calor. Parecía que su cerebro había confundido el 『dolor』 con el 『calor』.
 
@@ -48,7 +48,7 @@ Curiosamente, no sentía ningún deseo de mirarle la cara. Esa persona le había
 
 Solo deseaba que la chica estuviera a salvo.
 
-『――¿Baru?』
+「――¿Baru?」
 
 Le pareció escuchar una voz como el tañido de una campana.
 
@@ -58,7 +58,7 @@ Aun así, aunque no fuera real, esa voz sacudió sus emociones con una ternura q
 
 Entonces――
 
-『――¡!』
+「――¡!」
 
 Un grito breve, y acto seguido la alfombra de sangre recibió a otra persona.
 
@@ -70,13 +70,13 @@ Su mano pálida cayó sin fuerzas, y se entrelazó con la de él.
 
 Notó que los dedos de ella se movían levemente, como si le apretara la mano.
 
-『……pera』
+「……pera」
 
 Hizo un esfuerzo para que su consciencia, ya en fuga, regresara un instante. El dolor y el calor, todo se había ido. El aullido inútil del perro derrotado.
 
 Pero aun así――
 
-『Yo, definitivamente――』
+「Yo, definitivamente――」
 
 ――Te salvaré. Y te lo demostraré.
 

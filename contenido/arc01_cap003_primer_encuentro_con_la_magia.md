@@ -6,7 +6,7 @@
 
 ※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※
 
-「El tiempo se detuvo」, una expresión reservada para momentos como este. A la entrada del callejón se encontraba una sola chica.
+El tiempo se detuvo, una expresión reservada para momentos como este. A la entrada del callejón se encontraba una sola chica.
 
 Era una chica preciosa.
 
@@ -24,11 +24,11 @@ Subaru quedó abrumado, hasta el punto de haber olvidado por completo su situaci
 
 Los bandidos no fueron distintos: ante su hostilidad, su vigor anterior se esfumó. Incluso el hombre del cuchillo palideció mientras retrocedían hacia el fondo del callejón.
 
-「¡Espere, espere, espere! ¡Por favor, espere! ¡No lo entendemos del todo, pero le soltamos! ¡Así que por favor, perdónenos...!」
+「¡Espere, espere, espere! ¡Por favor, espere! ¡No lo entendemos del todo, pero le soltamos! ¡Así que por favor, perdónenos……!」
 
 「Me alegra que seáis tan sensatos. Aún estáis a tiempo, así que devolved lo que robasteis.」
 
-「Fue un error nuestro... ¿Eh? ¿Lo que robamos?」
+「Fue un error nuestro…… ¿Eh? ¿Lo que robamos?」
 
 「Por favor. Es muy importante. Dejaría ir cualquier otra cosa, pero no eso. Si me lo devolvéis ahora, os perdonaré la vida.」
 
@@ -36,15 +36,15 @@ Aunque sus palabras eran solo las de una súplica, las últimas estaban claramen
 
 Su mirada era afilada, y la mano que había extendido como si alcanzara algo estaba vacía. Sin embargo, había algo difícil de describir reuniéndose en su palma, algo que todos allí podían sentir.
 
-「¡E-Espere! ... Eh, ¿quizás ha habido algún malentendido?」
+「¡E-Espere! …… Eh, ¿quizás ha habido algún malentendido?」
 
-「... ¿Qué?」
+「…… ¿Qué?」
 
 Señalaron a Subaru, que seguía bajo sus botas.
 
-「Esto... Usted no ha venido a salvar a este tipo, ¿verdad?」
+「Esto…… Usted no ha venido a salvar a este tipo, ¿verdad?」
 
-「... Qué ropa tan extraña lleva. Quizás hay algún conflicto interno entre vosotros. No puedo aprobar que le hayáis atacado en grupo, pero si me preguntáis si tengo algún tipo de relación con él, tendría que decir que no.」
+「…… Qué ropa tan extraña lleva. Quizás hay algún conflicto interno entre vosotros. No puedo aprobar que le hayáis atacado en grupo, pero si me preguntáis si tengo algún tipo de relación con él, tendría que decir que no.」
 
 Quizás pensando que intentaban distraerla, su tono era de irritación. Los hombres, que parecían nerviosos, empezaron a hablar atropelladamente.
 
@@ -60,7 +60,7 @@ Sus ojos parecían preguntar si decían la verdad, y Subaru asintió instintivam
 
 Habiéndolo visto, la chica asintió a regañadientes.
 
-「Parece que no mentíais. ¿Así que fue por ahí...? Tendré que darme prisa.」
+「Parece que no mentíais. ¿Así que fue por ahí……? Tendré que darme prisa.」
 
 Les dio la espalda, dispuesta a marcharse.
 
@@ -68,13 +68,13 @@ Los hombres se relajaron visiblemente, y Subaru maldijo su propia estupidez por 
 
 「Dicho esto, no puedo ignorar lo que está ocurriendo aquí.」
 
-Se giró con la palma hacia ellos — y apuntó la 「piedra」 de su palma a los hombres, que se habían quedado inmóviles, mientras disparaba.
+Se giró con la palma hacia ellos―― y apuntó la 『piedra』 de su palma a los hombres, que se habían quedado inmóviles, mientras disparaba.
 
 Su velocidad habría encajado perfectamente en las Grandes Ligas, y su trayectoria era la de una pelota intencionada.
 
 El sonido de una pelota reglamentaria golpeando carne resonó tres veces, y los hombres salieron despedidos gritando de dolor.
 
-Tras impactar de lleno contra los hombres, se oyó un tintineo agudo cuando unos trozos de hielo cayeron junto a Subaru. Trozos de hielo del tamaño de un puño — su existencia desafiaba cualquier sentido de la estación e incluso la física misma, y se dispersaron como si fueran absorbidos por la atmósfera una vez cumplida su función.
+Tras impactar de lleno contra los hombres, se oyó un tintineo agudo cuando unos trozos de hielo cayeron junto a Subaru. Trozos de hielo del tamaño de un puño―― su existencia desafiaba cualquier sentido de la estación e incluso la física misma, y se dispersaron como si fueran absorbidos por la atmósfera una vez cumplida su función.
 
 「――Magia.」
 
@@ -82,15 +82,15 @@ La palabra más apropiada para explicar ese fenómeno le brotó de inmediato de 
 
 Habiéndolo visto ocurrir ante sus propios ojos, comprendió algo.
 
-「Esto no es ni de lejos tan fantástico como imaginaba... Me parece decepcionantemente real.」
+「Esto no es ni de lejos tan fantástico como imaginaba…… Me parece decepcionantemente real.」
 
 Había imaginado luz dispersándose o energía fluyendo sin control, pero en realidad eran solo unos trozos de hielo que aparecían rápidamente y desaparecían igual de rápido. No había ni el más mínimo rastro de atmósfera en ello.
 
-「Sí que habéis... metido la pata.」
+「Sí que habéis…… metido la pata.」
 
 Dejando de lado las impresiones de Subaru, los hombres golpeados por ese ataque decepcionantemente real habían sufrido daños serios. Dos de ellos apenas se mantenían en pie al levantarse y el tercero puede que hubiera recibido el impacto en un punto delicado, porque estaba inconsciente. A pesar de la sangre, los dos que aún estaban en pie parecían dispuestos a pelear. Incluso el que estaba al lado del del cuchillo sostenía un objeto que se asemejaba a una nata oxidada mientras se preparaba para el combate.
 
-「Me importa una mierda si eres maga o lo que seas. Los dos juntos te vamos a matar... ¿Crees que puedes ganar contra los dos?」
+「Me importa una mierda si eres maga o lo que seas. Los dos juntos te vamos a matar…… ¿Crees que puedes ganar contra los dos?」
 
 El hombre del cuchillo alzó la voz furioso mientras se apretaba la nariz rota con la otra mano, pero la chica no daba muestras de flaquear.
 
@@ -104,7 +104,7 @@ Subaru empezó a mirar a su alrededor sorprendido y los hombres compartieron su 
 
 Los tres estaban confundidos y desconcertados, y como para hacer alarde, la chica extendió la mano.
 
-Su palma apuntaba hacia arriba, y 「eso」 flotaba sobre sus blancos dedos.
+Su palma apuntaba hacia arriba, y 『eso』 flotaba sobre sus blancos dedos.
 
 「Es un poco embarazoso que me miren así.」
 
@@ -116,7 +116,7 @@ Su pelaje era gris y sus orejas eran caídas; a Subaru le recordaba mucho a un A
 
 「Correcto. Si os retiráis ahora, no os perseguiré. Pensadlo rápido, no tengo tiempo para esto.」
 
-Los hombres chasquearon la lengua ante sus palabras y empezaron a sacar a su compañero caído del callejón. Al pasar junto a Subaru y acercarse a la salida, miraron atrás hacia la chica y―
+Los hombres chasquearon la lengua ante sus palabras y empezaron a sacar a su compañero caído del callejón. Al pasar junto a Subaru y acercarse a la salida, miraron atrás hacia la chica――
 
 「Ya os ajustaremos las cuentas, maldita mocosa. Será mejor que tengáis cuidado la próxima vez que decidáis andar por aquí.」
 
@@ -142,7 +142,7 @@ A pesar de esto, quedó cautivado por la belleza de sus ojos color amatista. No 
 
 「No estoy seguro de eso. No noté ninguna malicia en absoluto; probablemente fue solo una reacción masculina instintiva.」
 
-「Cállate, Puck. ― Tú, probablemente sabes quién robó mi insignia, ¿verdad?」
+「Cállate, Puck. ―― Tú, probablemente sabes quién robó mi insignia, ¿verdad?」
 
 La chica silenció al gato mientras le lanzaba una pregunta a Subaru. Parecía bastante orgullosa de sí misma, pero:
 
@@ -152,7 +152,7 @@ La chica silenció al gato mientras le lanzaba una pregunta a Subaru. Parecía b
 
 Su fachada orgullosa se derrumbó, dejando asomar su expresión habitual por un momento. Su actitud imponente también había desaparecido mientras se giraba hacia el gato en su palma con nerviosismo.
 
-「¿Qué hacemos ahora? ¿De verdad hemos perdido el tiempo...?」
+「¿Qué hacemos ahora? ¿De verdad hemos perdido el tiempo……?」
 
 「Estás perdiendo el tiempo mientras hablamos, deberías darte prisa de verdad. La culpable definitivamente tiene la 『Protección Divina』 del viento, considerando lo rápido que corrió.」
 
@@ -170,7 +170,7 @@ Había planeado decir eso mientras se pasaba los dedos por el cabello y sus dien
 
 「¿Eh?」
 
-「Ah, será mejor que no intentes leva―, demasiado tarde.」
+「Ah, será mejor que no intentes leva――, demasiado tarde.」
 
 La cabeza le pesaba y el cuerpo se tambaleaba. Intentó apoyarse en la pared, pero su mano no asió nada. Al final, tuvo un reencuentro con el suelo en que había estado tumbado. Cayó completamente a la defensiva justo sobre su nariz, y el dolor agudo hizo que su consciencia se tambaleara.
 
