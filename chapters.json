@@ -130,5 +130,27 @@
     "archivo": "contenido/arc01_cap011_una_lucha_demasiado_tardia.md",
     "fecha": "2026-05-11",
     "resumen": "Felt cae intentando hacer lo que Subaru no pudo. Subaru lucha a sabiendas de que no tiene ninguna oportunidad, y Elsa lo destroza metódicamente antes de darle una muerte lenta y agonizante."
+  },
+  {
+    "id": "arc01_cap012",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 12,
+    "tipo": "capitulo",
+    "titulo": "Reencuentro con la Bruja",
+    "archivo": "contenido/arc01_cap012_reencuentro_con_la_bruja.md",
+    "fecha": "2026-05-17",
+    "resumen": "Subaru despierta de nuevo en el mercado, sacudido por las muertes que acaba de vivir. Mientras intenta recomponerse, vuelve a cruzarse con la chica de cabello plateado y la llama por el nombre que le dieron: Satella. Ella reacciona con indignación, pues ese nombre es el de la tabú Bruja de la Envidia. En ese momento, Felt le roba la insignia a la chica en plena calle, y Subaru, al perseguirlas por un callejón, termina acorralado de nuevo por los tres bandidos."
+  },
+  {
+    "id": "arc01_cap013",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 13,
+    "tipo": "capitulo",
+    "titulo": "Fin y comienzo",
+    "archivo": "contenido/arc01_cap013_fin_y_comienzo.md",
+    "fecha": "2026-05-17",
+    "resumen": "Subaru se enfrenta por tercera vez a los mismos bandidos, descubre que su bolsa de snacks está de nuevo llena e intuye sin aceptarlo del todo la naturaleza de su poder. Muere apuñalado dos veces y regresa al punto de partida ante el frutero de la calle principal."
   }
 ]
