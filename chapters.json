@@ -152,5 +152,16 @@
     "archivo": "contenido/arc01_cap013_fin_y_comienzo.md",
     "fecha": "2026-05-17",
     "resumen": "Subaru se enfrenta por tercera vez a los mismos bandidos, descubre que su bolsa de snacks está de nuevo llena e intuye sin aceptarlo del todo la naturaleza de su poder. Muere apuñalado dos veces y regresa al punto de partida ante el frutero de la calle principal."
+  },
+  {
+    "id": "arc01_cap014",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 14,
+    "tipo": "capitulo",
+    "titulo": "La cuarta vez es la vencida",
+    "archivo": "contenido/arc01_cap014_cuarta_vez_la_vencida.md",
+    "fecha": "2026-05-19",
+    "resumen": "Subaru, vivo y de vuelta al punto de partida, confirma que su habilidad es el Retorno por Muerte. Reflexiona sobre las tres muertes, acepta que no puede ignorar el destino de Felt, el abuelo Rom y la chica del alias, y decide buscarla de nuevo en la cuarta vuelta."
   }
 ]
