@@ -1,6 +1,6 @@
 # Re:Zero Kara Hajimeru Isekai Seikatsu
 ## Arco 1 — Un primer día tumultuoso
-### Capítulo 11: «Una lucha demasiado tardía»
+### Capítulo 11: Una lucha demasiado tardía
 
 ---
 

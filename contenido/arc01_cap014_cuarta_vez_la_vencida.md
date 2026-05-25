@@ -1,6 +1,6 @@
 # Re:Zero Kara Hajimeru Isekai Seikatsu
 ## Arco 1 — Un primer día tumultuoso
-### Capítulo 14: «La cuarta vez es la vencida»
+### Capítulo 14: La cuarta vez es la vencida
 
 ---
 

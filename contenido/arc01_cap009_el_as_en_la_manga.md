@@ -1,6 +1,6 @@
 # Re:Zero Kara Hajimeru Isekai Seikatsu
 ## Arco 1 — Un primer día tumultuoso
-### Capítulo 9: «El as en la manga»
+### Capítulo 9: El as en la manga
 
 ---
 

@@ -1,6 +1,6 @@
 # Re:Zero Kara Hajimeru Isekai Seikatsu
 ## Arco 1 — Un primer día tumultuoso
-### Capítulo 7: «Un reencuentro incomprensible»
+### Capítulo 7: Un reencuentro incomprensible
 
 ---
 

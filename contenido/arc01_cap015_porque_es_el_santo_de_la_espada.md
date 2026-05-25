@@ -1,6 +1,6 @@
 # Re:Zero Kara Hajimeru Isekai Seikatsu
 ## Arco 1 — Un primer día tumultuoso
-### Capítulo 15: «Porque es el Santo de la Espada»
+### Capítulo 15: Porque es el Santo de la Espada
 
 ---
 

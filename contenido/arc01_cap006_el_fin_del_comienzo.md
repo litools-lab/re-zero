@@ -1,6 +1,6 @@
 # Re:Zero Kara Hajimeru Isekai Seikatsu
 ## Arco 1 — Un primer día tumultuoso
-### Capítulo 6: «El fin del comienzo»
+### Capítulo 6: El fin del comienzo
 
 ---
 

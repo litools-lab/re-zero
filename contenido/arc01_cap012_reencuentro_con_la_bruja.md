@@ -1,6 +1,6 @@
 # Re:Zero Kara Hajimeru Isekai Seikatsu
 ## Arco 1 — Un primer día tumultuoso
-### Capítulo 12: «Reencuentro con la Bruja»
+### Capítulo 12: Reencuentro con la Bruja
 
 ---
 
