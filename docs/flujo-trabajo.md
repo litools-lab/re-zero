@@ -40,7 +40,7 @@ Todos los capítulos deben comenzar con este encabezado exacto, cambiando única
 ```markdown
 # Re:Zero Kara Hajimeru Isekai Seikatsu
 ## Arco N — Título del arco
-### Capítulo N: «Título del capítulo»
+### Capítulo N: Título del capítulo
 
 ---
 
@@ -50,12 +50,10 @@ Todos los capítulos deben comenzar con este encabezado exacto, cambiando única
 Para prólogos, epílogos e interludios, la tercera línea cambia:
 
 ```markdown
-### Prólogo: «Título del prólogo»
-### Epílogo: «Título del epílogo»
-### Interludio: «Título del interludio»
+### Prólogo: Título del prólogo
+### Epílogo: Título del epílogo
+### Interludio: Título del interludio
 ```
-
-El título del capítulo va entre `«»` (comillas angulares españolas), no entre `"` ni entre `'`.
 
 El encabezado termina siempre con `---` seguido de la línea `※ ※ ※ ※ ※ ※ ※ ※ ※ ※ ※` con once símbolos. El capítulo también termina con esa misma línea de `※`.
 
@@ -143,7 +141,6 @@ Repasa este checklist antes de entregar. Cada punto es una verificación indepen
 ### Formato y estructura
 - [ ] ¿El encabezado replica exactamente la plantilla establecida?
 - [ ] ¿El nombre del archivo sigue el convenio correcto?
-- [ ] ¿El título del capítulo va entre `«»`?
 - [ ] ¿No hay numeración de párrafos ni encabezados añadidos?
 
 ---
