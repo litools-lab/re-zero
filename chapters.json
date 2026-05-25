@@ -185,5 +185,27 @@
     "archivo": "contenido/arc01_cap016_negociacion_en_la_barriada.md",
     "fecha": "2026-05-22",
     "resumen": "De vuelta en la calle comercial, Subaru averigua que Felt ya huyó con la insignia y elabora una estrategia nueva: cubriéndose de barro para ganarse la compasión de los vecinos de la barriada, localiza el refugio de Felt. Camino a él tiene un inquietante encuentro con Elsa, y llega a tiempo de encontrar a Felt y proponerle el intercambio de la insignia."
+  },
+  {
+    "id": "arc01_cap017",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 17,
+    "tipo": "capitulo",
+    "titulo": "Negociación en la casa del botín",
+    "archivo": "contenido/arc01_cap017_negociacion_en_la_casa_del_botin.md",
+    "fecha": "2026-05-24",
+    "resumen": "Subaru negocia con Felt para intercambiar el teléfono por la insignia. Tras obtener la tasación de Rom como garantía, Felt acepta la oferta, pero antes de cerrar el trato le pregunta directamente para qué quiere la insignia."
+  },
+  {
+    "id": "arc01_cap018",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 18,
+    "tipo": "capitulo",
+    "titulo": "Batalla en la casa del botín",
+    "archivo": "contenido/arc01_cap018_batalla_en_la_casa_del_botin.md",
+    "fecha": "2026-05-24",
+    "resumen": "La negociación de Subaru con Felt fracasa justo cuando la Satella falsa irrumpe en la casa del botín antes de lo previsto. La situación se complica con la aparición de Elsa, que decide masacrar a todos para hacerse con la insignia, hasta que Subaru compra tiempo con una distracción caótica y Puck lanza su ataque."
   }
 ]
