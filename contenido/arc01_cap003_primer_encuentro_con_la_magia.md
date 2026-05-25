@@ -1,6 +1,6 @@
 # Re:Zero Kara Hajimeru Isekai Seikatsu
 ## Arco 1 — Un primer día tumultuoso
-### Capítulo 3: «Primer encuentro con la magia»
+### Capítulo 3: Primer encuentro con la magia
 
 ---
 
