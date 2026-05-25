@@ -1,12 +1,23 @@
 # <img src="assets/favicon.png" width="36" height="36" align="absmiddle" alt=""> Re:Zero — Traducción al Español · GitHub Pages
 
-Sitio estático para publicar la traducción capítulo a capítulo de la web novel *Re:Zero Kara Hajimeru Isekai Seikatsu* de Tappei Nagatsuki.
-
-→ **Documentación completa para colaboradores:** [`docs/`](docs/)
+Sitio estático con la traducción al español de la web novel *Re:Zero Kara Hajimeru Isekai Seikatsu* de Tappei Nagatsuki, publicada capítulo a capítulo.
 
 ---
 
-## Estructura
+## El lector
+
+La web incluye un lector con las siguientes funcionalidades:
+
+- **Control de tamaño de fuente** (A− / A+), persistente entre visitas
+- **Tema oscuro / claro** (botón ☀/🌙), persistente entre visitas
+- **Barra de progreso** de lectura
+- **Navegación por teclado**: ← → para capítulo anterior/siguiente
+- **Separadores `※`** detectados y renderizados automáticamente
+- **Drop cap** en el primer párrafo de cada capítulo
+
+---
+
+## Estructura del repositorio
 
 ```
 re-zero/
@@ -16,7 +27,7 @@ re-zero/
 ├── assets/
 │   ├── favicon.png
 │   └── logo.png
-├── contenido/
+├── contenido/              ← Archivos Markdown de cada capítulo
 │   ├── arc01_cap000_prologo.md
 │   ├── arc01_cap001_un_inservible_10_estriado.md
 │   └── ...
@@ -52,7 +63,7 @@ El archivo debe comenzar con el encabezado estándar del proyecto:
 ```markdown
 # Re:Zero Kara Hajimeru Isekai Seikatsu
 ## Arco N — Título del arco
-### Capítulo N: «Título del capítulo»
+### Capítulo N: Título del capítulo
 
 ---
 
@@ -93,34 +104,8 @@ GitHub Pages publica automáticamente en 1–2 minutos.
 
 ---
 
-## Simbología del proyecto
-
-Este proyecto conserva la simbología visual del original japonés. Los símbolos correctos son:
-
-| Elemento | Símbolo |
-|---|---|
-| Diálogo hablado | `「texto」` |
-| Pensamiento / frase dramática | `――texto` |
-| Pausa y silencio | `……` |
-| Conceptos especiales | `『texto』` |
-| Separador de escena | `△▼△▼△▼△` |
-| Separador de sección | `※ ※ ※` |
-
-Consulta [`docs/simbologia.md`](docs/simbologia.md) para la guía completa con ejemplos.
-
----
-
-## Funcionalidades del lector
-
-- **Control de tamaño de fuente** (A− / A+), persistente entre visitas
-- **Tema oscuro / claro** (botón ☀/🌙), persistente entre visitas
-- **Barra de progreso** de lectura
-- **Navegación por teclado**: ← → para capítulo anterior/siguiente
-- **Separadores `※`** detectados y renderizados automáticamente
-- **Drop cap** en el primer párrafo de cada capítulo
-
----
-
 ## Colaborar
 
-Lee [`docs/guia-colaboradores.md`](docs/guia-colaboradores.md) antes de empezar. La documentación completa está en [`docs/`](docs/).
+Si quieres contribuir al proyecto —traducción, revisión o correcciones— abre un [issue en este repositorio](../../issues) para ponerte en contacto. Indica en qué te gustaría ayudar y tu nivel con el japonés y/o el inglés.
+
+La documentación completa para traductores está en [`docs/`](docs/), incluyendo el glosario normativo, las voces de los personajes y el flujo de entrega.
