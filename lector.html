@@ -69,7 +69,7 @@
       --blood-l:     #a02040;
     }
 
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; background: #06060c; }
     body {
       background: var(--bg);
       color: var(--text);
@@ -277,6 +277,55 @@
     }
     @keyframes spin { to { transform: rotate(360deg); } }
 
+    /* ── FOOTER ───────────────────────────────────────── */
+    footer {
+      text-align: center; padding: 2.5rem 2rem;
+      background: #06060c;
+      border-top: 1px solid rgba(139,107,191,0.18);
+      font-family: var(--display-font);
+      font-size: 0.6rem; letter-spacing: 0.18em;
+      color: #7a7298;
+      text-transform: uppercase;
+    }
+    footer a { color: #b0a8cc; text-decoration: none; }
+    footer a:hover { color: #d4baff; }
+    .footer-logo {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: 0; margin-bottom: 1rem; text-decoration: none;
+      opacity: 0.75; transition: opacity 0.2s;
+    }
+    .footer-logo img { width: 24px; height: 24px; object-fit: contain; }
+    .footer-logo span {
+      font-family: 'Lora', serif; font-weight: 600; font-size: 0.85rem;
+      letter-spacing: 0px; text-transform: none; line-height: 1;
+    }
+    .footer-logo .li    { color: #ffffff; }
+    .footer-logo .tools { color: #05bfee; }
+    .footer-logo:hover { opacity: 1; }
+    .footer-colaborar {
+      margin-top: 1.2rem; padding-top: 1rem;
+      border-top: 1px solid rgba(139,107,191,0.1);
+      display: flex; align-items: center; justify-content: center;
+      gap: 1rem; flex-wrap: wrap;
+    }
+    .footer-colaborar span {
+      font-family: 'Lora', serif; font-style: italic;
+      font-size: 0.72rem; letter-spacing: 0; text-transform: none;
+      color: #7a7298;
+    }
+    .footer-colaborar a {
+      color: #8b6bbf !important;
+      border: 1px solid rgba(139,107,191,0.3);
+      padding: 0.3rem 0.85rem;
+      font-size: 0.55rem; letter-spacing: 0.22em;
+      transition: all 0.2s;
+    }
+    .footer-colaborar a:hover {
+      color: #b08de8 !important;
+      border-color: #8b6bbf;
+      background: rgba(139,107,191,0.07);
+    }
+
     ::-webkit-scrollbar { width: 5px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--violet-d); border-radius: 3px; }
@@ -298,6 +347,23 @@
 </nav>
 <div class="progress" id="progress"></div>
 <div id="app"></div>
+
+<footer>
+  <a class="footer-logo" href="https://github.com/litools-lab" target="_blank" rel="noopener" aria-label="LiTools en GitHub">
+    <img src="https://litools-lab.github.io/assets/redlogo_trans.png" alt="LiTools logo" />
+    <span><span class="li">Li</span><span class="tools">Tools</span></span>
+  </a>
+  <p>Traducción no oficial al español &nbsp;·&nbsp; Obra original © Tappei Nagatsuki</p>
+  <p style="margin-top:0.6rem">
+    <a href="https://ncode.syosetu.com/n2267be/" target="_blank" rel="noopener">Fuente original en Syosetu</a>
+    &nbsp;·&nbsp;
+    <a href="https://witchculttranslation.com/" target="_blank" rel="noopener">Referencia en inglés: Witch Cult Translations</a>
+  </p>
+  <div class="footer-colaborar">
+    <span>¿Quieres colaborar en la traducción?</span>
+    <a href="https://github.com/litools-lab/re-zero/issues" target="_blank" rel="noopener">Contactar &rarr;</a>
+  </div>
+</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
 <script>
@@ -441,7 +507,7 @@
         <header class="ch-header">
           <p class="ch-arc">Arco ${ch.arco} &nbsp;·&nbsp; ${ch.arcoTitulo}</p>
           <p class="ch-num">${label}</p>
-          <h1 class="ch-title">${ch.titulo}</h1>
+          <h1 class="ch-title">«${ch.titulo}»</h1>
           ${fecha ? `<p class="ch-date">${fecha}</p>` : ''}
         </header>`;
     }
