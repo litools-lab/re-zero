@@ -1,6 +1,6 @@
 # Re:Zero Kara Hajimeru Isekai Seikatsu
 ## Arco 1 — Un primer día tumultuoso
-### Prólogo: «El calor residual del comienzo»
+### Prólogo: El calor residual del comienzo
 
 ---
 
