@@ -1,6 +1,6 @@
 # Re:Zero Kara Hajimeru Isekai Seikatsu
 ## Arco 1 — Un primer día tumultuoso
-### Capítulo 1: «Un inservible 10 estriado»
+### Capítulo 1: Un inservible 10 estriado
 
 ---
 
