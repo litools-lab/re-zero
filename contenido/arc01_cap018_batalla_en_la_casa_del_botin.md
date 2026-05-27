@@ -30,7 +30,7 @@ Luego se dirigió a él con una sonrisa sádica y en tono glacial:
 
 Subaru notó cómo se le llenaba el marcador de avaricia y trató de cortarla mientras le sudaban las manos. Si seguía por ese camino, no iba a parar de subir el precio.
 
-Si eso ocurría, la negociación se alargaría y caminarían derechos hacia el FINAL MALO que los esperaba.
+Si eso ocurría, la negociación se alargaría y caminarían derechos hacia el BAD END que los esperaba.
 
 「¡Acepta ya las veinte monedas de oro sagrado y punto! ¡No intentes sacar más! ¡La que te contrató a ti tampoco puede ofrecer más de eso! ¡No vas a conseguir nada por encima de esa cifra!」
 
