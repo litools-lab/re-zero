@@ -207,5 +207,27 @@
     "archivo": "contenido/arc01_cap018_batalla_en_la_casa_del_botin.md",
     "fecha": "2026-05-24",
     "resumen": "La negociación de Subaru con Felt fracasa justo cuando la Satella falsa irrumpe en la casa del botín antes de lo previsto. La situación se complica con la aparición de Elsa, que decide masacrar a todos para hacerse con la insignia, hasta que Subaru compra tiempo con una distracción caótica y Puck lanza su ataque."
+  },
+  {
+    "id": "arc01_cap019",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 19,
+    "tipo": "capitulo",
+    "titulo": "La batalla de la usuaria de artes espirituales",
+    "archivo": "contenido/arc01_cap019_la_batalla_de_la_usuaria_de_artes_espirituales.md",
+    "fecha": "2026-05-27",
+    "resumen": "El combate entre Elsa y la falsa Satella llega a su clímax mientras Puck se queda sin maná. Con Puck desaparecido y Rom inconsciente, Subaru se lanza a salvar a Felt en el último momento."
+  },
+  {
+    "id": "arc01_cap020",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 20,
+    "tipo": "capitulo",
+    "titulo": "El reparto al completo",
+    "archivo": "contenido/arc01_cap020_el_reparto_al_completo.md",
+    "fecha": "2026-05-27",
+    "resumen": "Subaru protege a Felt lanzándose sobre Elsa y logra que la chica escape. A continuación, junto a la Satella falsa, aguanta como puede la embestida de la asesina hasta que una figura inesperada irrumpe en llamas desde el techo: Reinhard van Astrea."
   }
 ]
