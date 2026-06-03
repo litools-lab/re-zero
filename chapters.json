@@ -229,5 +229,27 @@
     "archivo": "contenido/arc01_cap020_el_reparto_al_completo.md",
     "fecha": "2026-05-27",
     "resumen": "Subaru protege a Felt lanzándose sobre Elsa y logra que la chica escape. A continuación, junto a la Satella falsa, aguanta como puede la embestida de la asesina hasta que una figura inesperada irrumpe en llamas desde el techo: Reinhard van Astrea."
+  },
+  {
+    "id": "arc01_cap021",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 21,
+    "tipo": "capitulo",
+    "titulo": "El poder del Santo de la Espada",
+    "archivo": "contenido/arc01_cap021_el_poder_del_santo_de_la_espada.md",
+    "fecha": "2026-05-27",
+    "resumen": "Felt, incapaz de seguir huyendo, busca desesperadamente ayuda y encuentra a Reinhard van Astrea. En el almacén, Reinhard se enfrenta a Elsa Granhiert desplegando una habilidad que deja sin palabras a Subaru: la Protección Divina de desviación de proyectiles y una esgrima que parece trascender lo humano."
+  },
+  {
+    "id": "arc01_cap022",
+    "arco": 1,
+    "arcoTitulo": "Un primer día tumultuoso",
+    "capitulo": 22,
+    "tipo": "capitulo",
+    "titulo": "Empezar una vida en otro mundo desde cero",
+    "archivo": "contenido/arc01_cap022_empezar_una_vida_en_otro_mundo_desde_cero.md",
+    "fecha": "2026-05-30",
+    "resumen": "Reinhard vence a Elsa en duelo y el peligro parece haber pasado. Subaru, aliviado, pide a la chica de cabello plateado que le diga su nombre, y ella responde: Emilia. El reencuentro feliz dura poco: el último tajo de Elsa, que había atravesado el garrote, alcanza a Subaru con retardo, y él pierde el conocimiento mientras el nombre recién obtenido todavía le resuena en la mente."
   }
 ]
