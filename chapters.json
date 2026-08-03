@@ -262,5 +262,27 @@
     "archivo": "contenido/arc01_cap023_la_luna_esta_mirando.md",
     "fecha": "2026-07-09",
     "resumen": "Desde la perspectiva de Reinhard, la escena posterior al combate: Emilia sana a Subaru, rechaza los reproches de Reinhard y lo trata con la misma nobleza directa que caracteriza a las Elegidas. La devolución de la insignia por parte de Felt desencadena un reconocimiento que lo cambia todo: Reinhard percibe en la joven algo que no puede ignorar y se la lleva bajo custodia, mientras la luna de la capital lo observa desde lo alto."
-  }
+  },
+  {
+    "id": "arc02_cap001",
+    "arco": 2,
+    "arcoTitulo": "Una semana tumultuosa",
+    "capitulo": 1,
+    "tipo": "capitulo",
+    "titulo": "Un techo desconocido, un pasillo interminable",
+    "archivo": "contenido/arc02_cap001_un_techo_desconocido_un_pasillo_interminable.md",
+    "fecha": "2026-07-09",
+    "resumen": "Subaru despierta ileso en una mansión desconocida y, atrapado en un pasillo que se repite en bucle, debe encontrar la salida antes de toparse con la primera habitante del lugar."
+  },
+  {
+    "id": "arc02_cap002",
+    "arco": 2,
+    "arcoTitulo": "Una semana tumultuosa",
+    "capitulo": 2,
+    "tipo": "capitulo",
+    "titulo": "La guardiana de la biblioteca prohibida y las criadas gemelas",
+    "archivo": "contenido/arc02_cap002_la_guardiana_de_la_biblioteca_prohibida_y_las_criadas_gemelas.md",
+    "fecha": "2026-07-16",
+    "resumen": "Subaru se topa con Beatrice, la niña que custodia la biblioteca de la mansión, y sufre en carne propia su magia antes de despertar en manos de las criadas gemelas Rem y Ram, con Emilia observando la escena desde la puerta."
+}
 ]
