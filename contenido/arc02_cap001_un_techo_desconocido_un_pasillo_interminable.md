@@ -36,7 +36,7 @@ Con la consciencia ya del todo despierta, Subaru bajó de la cama y giró leveme
 
 Primero revisó los hombros y las distintas articulaciones de brazos y piernas; después hizo elevaciones de rodilla y sentadillas para chequear el corazón, los pulmones y la resistencia, y ya con la respiración entrecortada, se subió la ropa para mirar,
 
-「La herida del vientre…… nada. Ni moretones, claro, ni cicatriz de haber quedado destripado. Ni siquiera puntos de sutura: la cirugía de este mundo es excelente. Si me quedan cicatrices, no podré ir de novia a ningún lado」
+「La herida del vientre…… nada. Ni moretones, claro, ni cicatriz de haber quedado destripado. Ni siquiera puntos de sutura: la cirugía de este mundo es excelente. Si me quedan cicatrices, no podré casarme」
 
 Cocinar, lavar la ropa y coser — como era de esperar, todas las habilidades domésticas seguían marcadas como NO ADQUIRIDAS.
 
