@@ -284,5 +284,16 @@
     "archivo": "contenido/arc02_cap002_la_guardiana_de_la_biblioteca_prohibida_y_las_criadas_gemelas.md",
     "fecha": "2026-07-16",
     "resumen": "Subaru se topa con Beatrice, la niña que custodia la biblioteca de la mansión, y sufre en carne propia su magia antes de despertar en manos de las criadas gemelas Rem y Ram, con Emilia observando la escena desde la puerta."
-}
+  },
+  {
+  "id": "arc02_cap003",
+  "arco": 2,
+  "arcoTitulo": "Una semana tumultuosa",
+  "capitulo": 3,
+  "tipo": "capitulo",
+  "titulo": "No podré casarme",
+  "archivo": "contenido/arc02_cap003_no_podre_casarme.md",
+  "fecha": "2026-07-23",
+  "resumen": "Subaru se reencuentra con Emilia, descubre que ella misma lo curó y lo cambió de ropa mientras estaba inconsciente, y termina llorando su dignidad perdida antes de partir con ella al jardín de la mansión."
+  }
 ]
