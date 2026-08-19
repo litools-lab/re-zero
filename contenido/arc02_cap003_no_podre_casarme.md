@@ -82,7 +82,7 @@ Emilia se llevó la mano a la frente y dejó la frase en el aire, como si le cos
 
 Al oír la palabra espíritu, lo primero que le vino a la mente fue, cómo no, aquel gato de pelaje gris.
 
-En esta versión del mundo apenas había tenido contacto con él, pero aun así, Subaru se dio cuenta de que estaba deseando volver a verlo. Sobre todo para reponer su cuota de mullidez.
+En esta versión del mundo apenas había tenido contacto con él, pero aun así, Subaru se dio cuenta de que estaba deseando volver a verlo. Sobre todo para reponer su cuota de achuches.
 
 Sin darse cuenta, Subaru movió las manos agitando los dedos en el aire. Emilia, por su parte, ya había empezado a adoptar la estrategia de ignorar directamente las rarezas de Subaru,
 
