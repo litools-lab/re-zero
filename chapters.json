@@ -293,7 +293,18 @@
   "tipo": "capitulo",
   "titulo": "No podré casarme",
   "archivo": "contenido/arc02_cap003_no_podre_casarme.md",
-  "fecha": "2026-07-23",
+  "fecha": "2026-08-18",
   "resumen": "Subaru se reencuentra con Emilia, descubre que ella misma lo curó y lo cambió de ropa mientras estaba inconsciente, y termina llorando su dignidad perdida antes de partir con ella al jardín de la mansión."
+  },
+  {
+    "id": "arc02_cap004",
+    "arco": 2,
+    "arcoTitulo": "Una semana tumultuosa",
+    "capitulo": 4,
+    "tipo": "capitulo",
+    "titulo": "Campo de entrenamiento en otro mundo",
+    "archivo": "contenido/arc02_cap004_campo_de_entrenamiento_en_otro_mundo.md",
+    "fecha": "2026-08-19",
+    "resumen": "Subaru entrena en el jardín de la mansión, le enseña a Emilia el Radio Taiso, conoce formalmente a Puck y presencia por primera vez a los espíritus que rodean a Emilia durante su pacto matutino."
   }
 ]
