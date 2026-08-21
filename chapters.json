@@ -328,5 +328,16 @@
     "archivo": "contenido/arc02_cap006_el_regreso_del_senor.md",
     "fecha": "2026-08-21",
     "resumen": "Subaru conoce a Roswaal, el excéntrico y teatral señor de la mansión, tras un primer choque violento; Emilia, Puck y Roswaal comparan en privado su valoración de Subaru mientras él es conducido a desayunar."
+  },
+  {
+    "id": "arc02_cap007",
+    "arco": 2,
+    "arcoTitulo": "Una semana tumultuosa",
+    "capitulo": 7,
+    "tipo": "capitulo",
+    "titulo": "Convivencia en la mansión Roswaal",
+    "archivo": "contenido/arc02_cap007_convivencia_en_la_mansion_roswaal.md",
+    "fecha": "2026-08-21",
+    "resumen": "Subaru desayuna con Beatrice, Emilia y Roswaal, descubre el vínculo entre Beatrice y Puck, y pregunta por qué la mansión solo cuenta con Ram y Rem como servicio, dejando a Roswaal con un gesto que presagia algo delicado."
   }
 ]
