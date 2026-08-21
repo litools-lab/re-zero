@@ -91,6 +91,7 @@
 | Puck / パック | **Puck** | 🔒 Gran espíritu, compañero de Emilia |
 | リア (apodo de Puck para Emilia) | **Lia** | 📝 Apodo cariñoso de Puck para Emilia, distinto de «Emilia-tan» |
 | ベティー (autoapelativo de Beatrice) | **Betty** | 📝 Beatrice se nombra así, en tercera persona |
+| にーちゃ (apodo de Beatrice para Puck) | **Nii-cha** | 📝 Confirmado en Arco 2, cap. 7 |
 
 ---
 
@@ -99,6 +100,7 @@
 | Término original | Traducción establecida | Notas |
 |---|---|---|
 | Demi-human / 亜人 | **Semihúmano** | 📝 No «demi-humano» |
+| ハーフエルフ | **Semielfa** | 📝 Raza de Emilia |
 | Oni / 鬼族 | **Oni** | 🔒 No traducir; en aposición si hace falta: «oni (demonio)» |
 | Spirit / 精霊 | **Espíritu** | 📝 |
 | Great Spirit | **Gran Espíritu** | 📝 |
@@ -179,6 +181,8 @@
 | Nine Divine Generals | **Nueve Generales Divinos** | 📝 Vollachia |
 | Stargazer | **Observadora de Estrellas** | 📝 Título de Shaula |
 | メイド | **Criada** | 📝 Rem y Ram; se evitan «doncella» y «mucama» |
+| 筆頭宮廷魔術師 | **Hechicero Mayor de la Corte** | 📝 Título oficial de Roswaal |
+| 亜人趣味 | **Afición por los semihumanos** | 📝 Autoapelativo de Roswaal |
 
 ---
 
@@ -228,3 +232,4 @@ Subaru introduce con frecuencia términos gamer y muletillas propias. Norma gene
 - **Puerta** (para *Gate*): en contextos donde «gate» aparece en términos técnicos de magia, traducir siempre como «Puerta» con mayúscula.
 - **Bruja de la Envidia** (no «Bruja de los Celos»): aunque *shitto* (嫉妬) implica celos posesivos, se mantiene «Envidia» por consistencia con el sistema de los siete pecados capitales que da nombre a todas las brujas.
 - **Comillas intercaladas en narración**: usar 「 」 si el japonés las marca así, o 『 』 si van anidadas dentro de un bloque en 「 」 ya abierto, o si son una referencia meta (p. ej. una frase de un manga). Nunca comillas españolas («») ni simples curvas (' ').
+- **Diálogo simultáneo**: cuando dos o más personajes hablan exactamente al unísono («en estéreo»), el original duplica los corchetes por cada voz (「「…」」, o 「「「「…」」」」 si son cuatro). Se conserva ese mismo recurso visual en español.
