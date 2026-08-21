@@ -306,5 +306,27 @@
     "archivo": "contenido/arc02_cap004_campo_de_entrenamiento_en_otro_mundo.md",
     "fecha": "2026-08-19",
     "resumen": "Subaru entrena en el jardín de la mansión, le enseña a Emilia el Radio Taiso, conoce formalmente a Puck y presencia por primera vez a los espíritus que rodean a Emilia durante su pacto matutino."
+  },
+  {
+    "id": "arc02_cap005",
+    "arco": 2,
+    "arcoTitulo": "Una semana tumultuosa",
+    "capitulo": 5,
+    "tipo": "capitulo",
+    "titulo": "Un sentimiento que despierta",
+    "archivo": "contenido/arc02_cap005_un_sentimiento_que_despierta.md",
+    "fecha": "2026-08-06",
+    "resumen": "Subaru conoce mejor a Puck y presencia el pacto matutino de Emilia con los espíritus, hasta que toma consciencia de un sentimiento nuevo hacia ella; la llegada de Roswaal interrumpe el momento y ambos son convocados a la mansión."
+  },
+  {
+    "id": "arc02_cap006",
+    "arco": 2,
+    "arcoTitulo": "Una semana tumultuosa",
+    "capitulo": 6,
+    "tipo": "capitulo",
+    "titulo": "El regreso del señor",
+    "archivo": "contenido/arc02_cap006_el_regreso_del_senor.md",
+    "fecha": "2026-08-13",
+    "resumen": "Subaru conoce a Roswaal, el excéntrico y teatral señor de la mansión, tras un primer choque violento; Emilia, Puck y Roswaal comparan en privado su valoración de Subaru mientras él es conducido a desayunar."
   }
 ]
